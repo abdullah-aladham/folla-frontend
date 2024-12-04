@@ -1,0 +1,78 @@
+
+#logo{
+    max-width: 80px;
+    max-height: 80px;
+}
+/*<uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 100 to 900*/
+
+body{
+    direction: rtl;   
+  
+}
+.logo{
+    font-family:Jomolhari;
+    
+}
+
+#navbar-ar li{
+padding:5px;
+
+}
+#Notifications{
+    display: inline-block;
+    padding: 0px;
+    margin: 1%;
+}
+#NotifNum{
+    font-family: Teko;
+
+}
+#slider-img{
+    max-width: 2000px;
+    max-height:700px;
+}
+.about-us-ar{
+    direction: rtl;
+}
+.about-us{
+    margin-bottom: 200px;
+    margin-left: 1%;
+}
+#about-us-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+#about-us-subtitle{
+    font-size: 25px;
+}
+#about-us-p{
+    font-size:20px;
+}
+#about-us-img{
+float: left;
+width:25% ;
+margin-top: -220px;
+
+
+}
+
+#Products-title{
+    text-align: center;
+       font-size: 50px;
+       font-weight: bold;
+   }
+   .Products{
+       margin-bottom:200px ;
+       margin-left:1%;
+   }
+   #footer-link{
+       text-decoration: none;
+   }
+   .social_media a{
+   padding: 5px;
+   }
+   
+   
+   
