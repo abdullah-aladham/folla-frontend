@@ -1,13 +1,15 @@
 
-#logo{
-    max-width: 80px;
-    max-height: 80px;
-}
+
+    #logo{
+        font-family:Jomolhari;
+    }
+
 /*<uniquifier>: Use a unique and descriptive class name*/
 /* <weight>: Use a value from 100 to 900*/
 
 body{
     direction: rtl;   
+    margin-top:70px;
   
 }
 .logo{
@@ -17,6 +19,18 @@ body{
 
 #navbar-ar li{
 padding:5px;
+
+}
+#search-box{
+    border-radius: 0px 5px 5px 0px;
+    border-left:none ;
+}
+#search-box:focus{
+    width: 25em;
+    }
+#sbtn{
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
 
 }
 #Notifications{
@@ -72,6 +86,7 @@ margin-top: -220px;
    }
    .social_media a{
    padding: 5px;
+   font-size: 1.3em;
    }
    
    

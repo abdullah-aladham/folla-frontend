@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <!--website icon -->
-    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="icon" type="image/x-icon" href="images/logo1.ico">
 
 <!--font from google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,54 +23,73 @@
 <!--fontawesome imports-->
 <link rel="stylesheet" href="css/css/all.min.css">
 </head>
-<body>
+<body class="container-fluid">
     <header>
         
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent" id="navbar" >
-
-            <a class="navbar-brand" href="#" class="logo">Folla Accessories</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar" >
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="logo">Folla Accessories</a>
+            
+           
+            <div class="container-fluid">
+              <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#main-menu" 
+              aria-controls="main-menu" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <section class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Homepage</a>
-
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Shop </a>
-
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">New Products</a>
-
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-user"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="main-menu">
+                <div class="m-auto d-flex flex-row">
+                  <form role="search">
+                  <div class="input-group">
+                  <input class="form-control border-success " type="search" placeholder="Search" aria-label="Search" id="search-box">
+                  <span class="input-group-append">
+                  <button class="btn btn-outline-success m-0" type="submit" id='sbtn' ><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </span>
+                </div>
+                </form>
+              </div>
+                <ul class="navbar-nav ms-10 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" 
+                    href="#" 
+                    role="button"
+                     data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="fa-solid fa-user"></i>
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"> SignUp</a></li>
-                      <li><a class="dropdown-item" href="#">Login</a></li>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                      <li><a class="dropdown-item " href="#"><i class="fa-solid fa-right-to-bracket p-2"></i><span class="p-2">Login</span></a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus p-2"></i> <span class="p-2">Signup</span></a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li id="Notifications"><a class="dropdown-item" href="#">Notifications<span class="bg-muted text-black"id="NotifNum">0</span></a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bell"></i> <span class="p-2">Notifications</span><span class="p-2">1</span></a></li>
                     </ul>
                   </li>
-                <li class="nav-item">
-                    <a href="../frontend-ar/"class="nav-link">AR</a>
-                </li>
-            </ul>    
-
-
-                </section>
-
+                  <li class="nav-item">
+                   <a class="nav-link" href="frontend-ar/index.html">العربية</a>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+               
             </nav>
     </header>
-        <section class="container-fluid"> 
+        <!-- <section >  -->
             <section name="main-carousel">
                  <!--carousel section-->
+                 <div class="container-fluid">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -108,8 +127,9 @@
                 </button>
                 
               </div>
+            </div>
             </section>
-</section>
+<!-- </section> -->
         <section>
             <!--about us section-->
             <div class="about-us">
@@ -124,81 +144,98 @@
             </div>
         </section>
     </section><!--end of contatiner section-->
-    <section class="Products">
-        <p  id="Products-title">Our Products</p>
-        <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                <img src="images/Dream-Catcher-Bracelet.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Dream Catcher Bracelet</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                </div>
-              </div>
-              <div></div>
-            <div class="col"><div class="card" style="width: 18rem;">
-                <img src="images/fish-tail-necklace.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div></div>
-            <div class="col"><div class="card" style="width: 18rem;">
-                <img src="images/floral-earrings.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div></div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                <img src="images/daisy-ring.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Go to shop</h5>
-                  <p class="card-text">if you want to see more of product visit our shop </p>
-                  <a href="#" class="btn btn-primary">See more</a>
-                </div>
-              </div>
-              </div>
-              
-        </div>
-    
-          
-          
-          
-          <hr>
-    </section>
+    <div class="d-flex flex-row">
+      <div class="col-md-3">     
+      <div class="card" style="width: 18rem;">
+            <img src="images/Dream-Catcher-Bracelet.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dream Catcher Bracelet</h5>
+              <p class="card-text">Dream catcher bracelet, 925 sterling silver bracelet</p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+            </div>
+            </div>
+          </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="images/fish-tail-necklace.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fish tail necklace</h5>
+              <p class="card-text">Light and soft fish tail necklace, 925 Silver necklace</p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+            </div>
+          </div>
+       </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="images/floral-earrings.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Floral Earrings</h5>
+              <p class="card-text">And from our Nice collection ❤️<br>
+                We provide you with this soft and light earring, which is 🌼Floral earrings 😍<br>
+               And of course it shines with light ❤️
+               It is an original 925 silver earring❤️</p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+            </div>
+          </div>
+         </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+            <img src="images/daisy-ring.webp" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Go to shop</h5>
+              <p class="card-text">if you want to see more of product visit our shop </p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+            </div>
+          </div>
+    </div>
+    </div>
+    </div>
+
+  
+      <hr>
+  </div>
     <section class="contactus">
 <h3 class="text-center">Contact Us</h3>
-<div class="container-fluid mx-auto">
-<form>
+<div class="container-fluid ">
+  
+  
+    <form>
+      <div class="row ">
+      <div class="col-md">
     <div class="form-group">
-      <label for="exampleInputEmail1">Your name</label>
-      <input type="text" class="form-control"  placeholder="Enter Your name" required>
+      <label for="Name">Your name</label>
+      <input type="text" id="Name"class="form-control w-25"  placeholder="Enter Your name" required>
     </div>
+</div>
+<div class="col-md">
     <div class="form-group">
-      <label for="exampleInputPassword1">Your Email</label>
-      <input type="email" class="form-control" id="Email" placeholder="Enter Your Email"required>
+      <label for="Email">Your Email</label>
+      <input type="email" class="form-control w-25" id="Email" placeholder="Enter Your Email"required>
     </div>
+    </div>
+    <div class="row">
+    <div class="col-md">
     <div class="form-group">
-        <label for="exampleInputPassword1">Phone number</label>
-        <input type="text" class="form-control col-sm-2 col-form-label" id="Email" placeholder="Enter Your Phone Number"required>
+        <label for="Phone">Phone number</label>
+        <input type="text" class="form-control col-sm-2 col-form-label w-25" id="Phone" placeholder="Enter Phone Number"required>
       </div>
+      </div>
+      <div class="row">
+      <div class="col-md">
       <div class="form-group">
-        <label for="exampleFormControlTextarea1" class="form-label">Subject</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your text here..."></textarea>
+        <label for="Subject" class="form-label">Subject</label>
+        <textarea class="form-control w-25"  rows="3" placeholder="Your text here..." id="Subject"></textarea>
 
+      </div>
+    </div>
+    </div>
       </div>
       <div class="text-center">
     <button type="submit" class="btn btn-success btn-center">Submit</button>
+    <button type="reset"class="btn btn-danger btn-center">Clear</button>
     </div>
   </form>
+</div>
   </div>
     </section>
         <footer>
@@ -238,10 +275,10 @@
                 </div>
                 <div class="col"><h4>Follow us at</h4>
                     <div  class="social_media">
-                        <a href="https://www.facebook.com/profile.php?id=100094935185983"id="footer-link"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
-                        <a href="https://www.instagram.com/folla_accessories/"id="footer-link"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
-                        <a href="https://www.tiktok.com/@folla.accessories"id="footer-link"><i class="fa-brands fa-tiktok" style="color: #000000;"></i></a>
-                        <a href="https://t.me/folla_accessories"id="footer-link"><i class="fa-brands fa-telegram" style="color: #000000;"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100094935185983"id="footer-link" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
+                        <a href="https://www.instagram.com/folla_accessories/"id="footer-link" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                        <a href="https://www.tiktok.com/@folla.accessories"id="footer-link"target="_blank"><i class="fa-brands fa-tiktok" style="color: #000000;"></i></a>
+                        <a href="https://t.me/folla_accessories"id="footer-link" target="_blank"><i class="fa-brands fa-telegram" style="color: #000000;"></i></a>
     
                     </div>
                 </div>
