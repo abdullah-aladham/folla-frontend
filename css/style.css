@@ -7,6 +7,7 @@
 
 body{
     margin-top: 70px;
+    scroll-behavior: smooth;
 }
 /* .spinner-wrapper{
     background-color: black;
@@ -88,3 +89,52 @@ font-size: 1.1em;
 }
 
 
+@media  (max-width:360px){
+body{
+    font-size: 0.8em;
+    margin-top: 0.7em;
+
+}
+#logo{
+    font-size:1.2em;
+
+}
+#navbar{
+    position: fixed;
+  
+   
+}
+#toggler{
+    position: relative;
+    left:19%;
+    top:19%;
+    bottom:10%
+}
+#Products-title{
+    font-size: 1.2rem;
+}
+#about-us-title{
+    font-size:1.2rem;
+}
+#about-us-subtitle{
+    font-size: 0.9rem;
+}
+#about-us-p{
+    font-size:1.1em;
+}
+#about-us-img{
+    float: right;
+    width:45% ;
+margin-top: 0.8rem;
+}
+#shop{
+   font-size:0.9em
+}
+#prodct{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+   align-items: center;
+}
+
+}
