@@ -29,7 +29,7 @@
         
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar" >
             <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" id="logo">Folla Accessories</a>
+            <a class="navbar-brand" href="../index.html" id="logo">Folla Accessories</a>
             
            
             <div class="container-fluid">
@@ -57,10 +57,10 @@
               </div>
                 <ul class="navbar-nav ms-10 mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="shop.html">Shop</a>
+                    <a class="nav-link" href="../shop.html">Shop</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" 
@@ -88,22 +88,39 @@
                
             </nav>
     </header>
-    <div class="container d-flex justify-content-center">
-        <form>
-            <p>Enter your email to reset password and if you are registered you'll get password reset email</p>
-            <div class="mb-3  text-center">
-                <label for="newPassword">Enter new Password</label>
-                <input type="password" class="form-control " placeholder="Enter Email" id="newPassword">
+    <section>
+        <div class="container d-flex justify-content-center">
+            <div class="d-flex flex-column">
+                <a href="#" class="button btn btn-light " id="insta"><i class="fa-brands fa-instagram" style="color: #E1306C;">تسجيل الدخول باستخدام الانستاغرام</i></a>
+                <a href="#" class="button btn btn-primary"><i class="fa-brands fa-instagram" style="color: #fff;">تسجيل الدخول باستخدام فيسبوك</i></a>
+                <a href="#" class="button btn btn-warning"><i class="fa-brands fa-snapchat">تسجيل الدخول باستخدام snapchat</i></a>
             </div>
-            <div class="mb-3  text-center">
-                <label for="confirmNewPass">Confirm new Password</label>
-                <input type="password" class="form-control " placeholder="Enter Email" id="ConfirmNewPass">
-            </div>
-            <div class="text-center">
-            <button class="button btn btn-outline-success" >Submit</button>
-            </div>
+              </div>
+            <form>
+                <div class="mb-3  text-center">
+                    <label for="Email">Email</label>
+                    <input type="text" class="form-control " placeholder="Enter Email">
+                </div>
+                <div class="mb-3">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter password">
+                    <div id="passwordHelp" class="form-text"><a href="forgot-pass.html">forgot password?</a></div>
+
+
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label" for="Remember me" aria-describedby="passwordHelp">Remember me</label>
+
+
+                </div>
+                <div class="text-center">
+                    <button class="buttone btn btn-primary">login</button>
+                </div>
+
             </form>
-            </div>
+        </div>
+    </section>
     <footer>
         <hr>
        <div class="container">
@@ -151,7 +168,6 @@
         </div>
        </div>
     </footer>
-
 
     </body>
     </html>
