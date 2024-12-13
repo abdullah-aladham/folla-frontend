@@ -87,7 +87,16 @@ margin-top: -220px;
 padding: 5px;
 font-size: 1.1em;
 }
-
+/*Notification side styles*/
+/*notification li style*/
+#notif-li:hover{
+background-color: rgba(50, 53, 194, 0.1);
+transition: .1 ease;
+}
+.new-notif{
+    max-height: 50px;
+    max-width: 50px;
+}
 
 /* @media  (max-width:360px){
 body{
