@@ -23,12 +23,12 @@
 <!--fontawesome imports-->
 <link rel="stylesheet" href="css/css/all.min.css">
 </head>
-<body class="container-fluid">
+<body class="container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
  
     <header>
         
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar" >
-            <div class="container-fluid">
+            <div class="container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
             <a class="navbar-brand" href="index.html" id="logo">Folla Accessories</a>
             <button 
               class="navbar-toggler" 
@@ -42,7 +42,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
            
-            <div class="container-fluid">
+            <div class="container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
               
               <div class="collapse navbar-collapse" id="main-menu">
                 <div class="m-auto d-flex flex-row">
@@ -91,55 +91,46 @@
         <!-- <section >  -->
             <section name="main-carousel">
                  <!--carousel section-->
-                 <div class="container-fluid">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/slider-img.webp" class="d-block w-100" alt="slider-img" id="slider-img">
-                        <div class="carousel-caption d-none d-md-block text-xl-start">
-                        <h5 class="text-lg-start">Folla Accessories</h5>
-                        <p class="text-md font-weight-bold">delicacy</p>
-                      </div>
-                        </div>
                  
-                  <div class="carousel-item">
-                    <img src="images/slider-img.webp" class="d-block w-100" alt="..."id="slider-img">
-                    <div class="carousel-caption d-none d-md-block text-xl-start">
-                        <h5 class="text-lg-start">Folla Accessories</h5>
-                        <p class="text-md font-weight-bold">chic</p>
+                 <div class="container container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/1.webp" class="d-block w-100" alt="delicacy">
                       </div>
-                  
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/slider-img.webp" class="d-block w-100" alt="..."id="slider-img">
-                    <div class="carousel-caption d-none d-md-block text-xl-start">
-                        <h5 class="text-lg-start">Folla Accessories</h5>
-                        <p class=" font-weight-bold">shiness</p>
+                      <div class="carousel-item">
+                        <img src="images/2.webp" class="d-block w-100" alt="Chic">
                       </div>
+                      <div class="carousel-item">
+                        <img src="images/3.webp" class="d-block w-100" alt="Glitter">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                
-              </div>
-            </div>
+                  </div>
+             
             </section>
 <!-- </section> -->
         <section>
             <!--about us section-->
             <div class="about-us">
-                <p id="about-us-title">Folla Accessories</p>
-                    <p id="about-us-subtitle"class="text-center"> 🌟Precision💯, Elegance🥰, Shine
+                <p id="about-us-title" >Folla Accessories</p>
+                    <p id="about-us-subtitle"class="text-left"> 🌟Precision💯, Elegance🥰, Shine
 
                         </p>
-        <p id="about-us-p"class="text-center">Discover our unique collection of elegant accessories,<br> to reflect your style and taste in the most beautiful way! 💎 💮❤️</p>
+        <p id="about-us-p"class="text-left">Discover our unique collection of elegant accessories,<br> to reflect your style and taste in the most beautiful way! 💎 💮❤️</p>
                 
                     <img src="images/Dream-Catcher-Bracelet.webp" alt="Dream-Catcher-Bracelet" id="about-us-img">
               <div class="text-center m-auto">
@@ -151,49 +142,51 @@
     </section><!--end of contatiner section-->
     <section>
     <p  id="Products-title">Our Products</p>
-    <div class="row d-flex flex-sm-column flex-md-row">
+    <div class="row d-flex flex-sm-column flex-md-row flex-lg-row flex-xl-row">
       <div class="col-md-3">     
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 16rem;">
             <img src="images/Dream-Catcher-Bracelet.webp" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Dream Catcher Bracelet</h5>
-              <p class="card-text">اسوارة dream catcher وهي اسوارة فضة عيار 925</p>
-              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> أضف الى السلة</a>
+              <p class="card-text">Dream Catcher Bracelet S925</p>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
             </div>
             </div>
         </div>
 
           
     <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 16rem;">
         <img src="images/fish-tail-necklace.webp" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Fish Tail Necklace</h5>
-          <p class="card-text"></p>
+          <p class="card-text"> Some text here</p>
           <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>  Add to Cart</a>
         </div>
       </div>
    </div>
    <div class="col-md-3">
-   <div class="card" style="width: 18rem;">
+   <div class="card" style="width: 16rem;">
     <img src="images/floral-earrings.webp" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Floral Earrings</h5>
-      <p class="card-text">ومن تشكيلتنا الحلوة ❤️<br>
-        بنوفرلكم هالحلق الناعم والخفيف واللي هو <br>🌼Floral earrings 😍
-       وطبعا بلمع بالضو ❤️<br>
-       وهو حلق فضة اصلية عيار 925❤️</p>
+      <p class="card-text">From our sweet collection ❤️<br>
+        We present to you this soft and light earring, which is <br>🌼Pink earring 😍
+        And of course it sparkles in the light ❤️<br>       and it is 925 Silver Earrings❤️</p>
       <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
       </div>
     </div>
   </div>
 <div class="col-md-3">
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 16rem;">
+      
     <img src="images/daisy-ring.webp" class="card-img-top" alt="..." >
     <div class="card-body">
       <h5 class="card-title">Daisy Ring</h5>
-      <p class="card-text"> نقدملك هالخاتم الحلو<br>ومن تشكيلتنا الحلوة❤️  </p>
+      <p class="card-text">We present to you this beautiful ring<br>from our beautiful collection❤️</p>
+      
       <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>  Add to Cart</a>
+
     </div>
   </div>
   </div>
@@ -247,7 +240,7 @@
     </section>
         <footer>
             <hr>
-           <div class="container">
+           <div class="container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
             <div class="row">
                 <div class="col">
                     <h3>Folla Accessories</h3>

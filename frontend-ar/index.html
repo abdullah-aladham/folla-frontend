@@ -31,6 +31,7 @@
         
       <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light " id="navbar" >
         <div class="container-fluid d-flex flex-row bd-highlight">
+          
         <a class="navbar-brand" href="#" id="logo">Folla Accessories</a>
         
         <button 
@@ -91,53 +92,43 @@
         <section class="container-fluid"> 
             <section name="main-carousel">
                  <!--carousel section-->
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/slider-img.webp" class="d-block w-100" alt="slider-img" id="slider-img">
-                        <div class="carousel-caption d-none d-md-block text-xl-end">
-                        <h5 class="text-lg-end">Folla Accessories</h5>
-                        <p class="text-md font-weight-bold">دقة</p>
-                      </div>
-                        </div>
-                 
-                  <div class="carousel-item">
-                    <img src="images/slider-img.webp" class="d-block w-100" alt="..."id="slider-img">
-                    <div class="carousel-caption d-none d-md-block text-xl-end">
-                        <h5 class="text-lg-end">Folla Accessories</h5>
-                        <p class="text-md font-weight-bold">أناقة</p>
-                      </div>
-                  
+                 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
-                  <div class="carousel-item">
-                    <img src="images/slider-img.webp" class="d-block w-100" alt="..."id="slider-img">
-                    <div class="carousel-caption d-none d-md-block text-xl-end">
-                        <h5 class="text-lg-end">Folla Accessories</h5>
-                        <p class=" font-weight-bold">لمعان</p>
-                      </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/4.webp" class="d-block w-100" alt="delicacy">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/5.webp" class="d-block w-100" alt="Chic">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/6.webp" class="d-block w-100" alt="Glitter">
+                    </div>
                   </div>
+                  <button class="carousel-control-next " type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">اللاحق</span>
+                  </button>
+                  <button class="carousel-control-prev  " type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">السابق</span>
+                  </button>
                 </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                
-              </div>
             </section>
 </section>
         <section>
             <!--about us section-->
             <div class="about-us">
-                <p id="about-us-title">Folla Accessories</p>
+              
+                <p class="font-weight-bold text-center display-1">Folla Accessories</p>
                     <p id="about-us-subtitle"> 🌟دٍقّة💯,أَناقة🥰,لمعان</p>
         <p id="about-us-p">اكتشفي مجموعتنا المميزة من الإكسسوارات الأنيقة،<br> لتعكس أسلوبك وذوقك بأبهى طريقة! 💎 💮❤️</p>
                 <picture>
-                    <img src="images/Dream-Catcher-Bracelet.webp" alt="Dream-Catcher-Bracelet" id="about-us-img">
+                    <img src="images/Dream-Catcher-Bracelet.webp" alt="Dream-Catcher-Bracelet" id="about-us-img" ><!---->
                 <a class="btn btn-outline-success">تسوق الآن</a>
             </div>
         </section>
@@ -145,10 +136,10 @@
     <section>
     <div class="container">
 
-        <p  id="Products-title">تشكيلتنا</p>
+        <p  id="Products-title" class="text-center text-sm-3 text-md-3 ">تشكيلتنا</p>
         <div class="row d-flex flex-sm-column flex-md-row">
           <div class="col-md-3">     
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 16rem;">
                 <img src="images/Dream-Catcher-Bracelet.webp" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Dream Catcher Bracelet</h5>
@@ -160,7 +151,7 @@
 
               
         <div class="col-md-3">
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 16rem;">
             <img src="images/fish-tail-necklace.webp" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Fish Tail Necklace</h5>
@@ -170,7 +161,7 @@
           </div>
        </div>
        <div class="col-md-3">
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 16rem;">
         <img src="images/floral-earrings.webp" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Floral Earrings</h5>
@@ -183,7 +174,7 @@
         </div>
       </div>
     <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 16rem;">
         <img src="images/daisy-ring.webp" class="card-img-top" alt="..." >
         <div class="card-body">
           <h5 class="card-title">Daisy Ring</h5>
@@ -197,59 +188,59 @@
        
           <hr>
       
-    <section class="contactus">
-<h3 class="text-center">إتصل بنا</h3>
-<div class="container-fluid ">
-  
-  
-  <form>
-    <div class="row ">
-    <div class="col-md">
-  <div class="form-group">
-    <label for="Name">إسمك</label>
-    <input type="text" id="Name"class="form-control w-25"  placeholder="أدخل اسمك" required>
-  </div>
-</div>
-<div class="col-md">
-  <div class="form-group">
-    <label for="Email">الايميل الخاص بك</label>
-    <input type="email" class="form-control w-25" id="Email" placeholder="ادخل الايميل"required>
-  </div>
-  </div>
-  <div class="row">
-  <div class="col-md">
-  <div class="form-group">
-      <label for="Phone">رقم الجوال</label>
-      <input type="text" class="form-control col-sm-2 col-form-label w-25" id="Phone" placeholder="ادخل رقم الجوال"required>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-md">
-    <div class="form-group">
-      <label for="Subject" class="form-label">الموضوع</label>
-      <textarea class="form-control w-25"  rows="3" placeholder="اكتب الموضوع الخاص بك..." id="Subject"></textarea>
-
-    </div>
-  </div>
-  </div>
-    </div>
-    <div class="text-center">
-  <button type="submit" class="btn btn-success btn-center">إرسال</button>
-  <button type="reset"class="btn btn-danger btn-center">إلغاء</button>
-  </div>
-</form>
-</div>
-</div>
-    </section>
+          <section class="contactus">
+            <h3 class="text-center">إتصل بنا</h3>
+            <div class="container d-flex justify-content-center">
+              
+              
+                <form>
+                  <div class="row ">
+                  <div class="col-md-5">
+                <div class="form-group">
+                  <label for="Name">اسمك</label>
+                  <input type="text" id="Name"class="form-control "  placeholder="اكتب اسمك" required>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                  <label for="Email">الايميل</label>
+                  <input type="email" class="form-control " id="Email" placeholder="ادخل الايميل الخاص بك"required>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-5 ">
+                <div class="form-group ">
+                    <label for="Phone">رقم الهاتف</label>
+                    <input type="text" class="form-control col-sm-2 col-form-label " id="Phone" placeholder="Enter Phone Number"required>
+                  </div>
+                  </div>
+                  <div class="row ">
+                  <div class="col-md text-center">
+                  <div class="form-group">
+                    <label for="Subject" class="form-label">الموضوع</label>
+                    <textarea class="form-control "  rows="3" placeholder="اكتب الموضوع هنا..." id="Subject"></textarea>
+            
+                  </div>
+                </div>
+                </div>
+                  </div>
+                  <div class="text-center">
+                <button type="submit" class="btn btn-success btn-center">ارسل</button>
+                <button type="reset"class="btn btn-danger btn-center">إلغاء</button>
+                </div>
+              </form>
+            </div>
+              </div>
+                </section>
         <footer>
             <hr>
            <div class="container">
             <div class="row">
-                <div class="col">
-                    <h3>Folla Accessories</h3>
-                    <p id="about-us-subtitle"> 🌟دٍقّة💯,أَناقة🥰,لمعان</p>
+                <div class="col-md-3">
+                    <h4 class="text-center text-md ">Folla Accessories</h4>
+                    <p id="about-us-subtitle" "> 🌟دٍقّة💯,أَناقة🥰,لمعان</p>
                 </div>
-                <div class="col"><h4>روابط سريعة</h4>
+                <div class="col-md-2"><h4>روابط سريعة</h4>
                 <ul class="list-unstyled">
                     <li><a href="#" id="footer-link">من نحن</a></li>
                     <li><a href="#"id="footer-link">منتجاتنا</a></li>
@@ -258,7 +249,7 @@
 
                 </ul>
             </div>
-                <div class="col"><h4>المزيد</h4>
+                <div class="col-md-2"><h4>المزيد</h4>
                     <ul class="list-unstyled">
                         <li><a href="#"id="footer-link">تسجيل الدخول </a></li>
                         <li><a href="#"id="footer-link">انشاء حساب</a></li>
@@ -266,7 +257,7 @@
     
                     </ul>
                 </div>
-                <div class="col"><h4>الأقسام </h4>
+                <div class="col-md-2"><h4>الأقسام </h4>
                     <ul class="list-unstyled">
                         <li><a href="#"id="footer-link">أساور</a></li>
                         <li><a href="#"id="footer-link">خواتم</a></li>
@@ -275,7 +266,7 @@
     
                     </ul>
                 </div>
-                <div class="col"><h4>اعملو فولو ع السوشل ميديا❤️</h4>
+                <div class="col"><h4> لا تنسوا المتابعة ❤️</h4>
                     <div  class="social_media">
                         <a href="https://www.facebook.com/profile.php?id=100094935185983"id="footer-link" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
                         <a href="https://www.instagram.com/folla_accessories/"id="footer-link" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>

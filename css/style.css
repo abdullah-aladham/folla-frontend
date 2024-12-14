@@ -55,19 +55,20 @@ padding:5px;
 }
 #about-us-title{
     text-align: center;
-    font-size: 50px;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 #about-us-subtitle{
-    font-size: 25px;
+    font-size: 0.9rem;
 }
 #about-us-p{
-    font-size:20px;
+
+    font-size:1rem;
 }
 #about-us-img{
 float: right;
-width:25% ;
-margin-top: -220px;
+max-width:28% ;
+margin-top: -190px;
 
 
 }
