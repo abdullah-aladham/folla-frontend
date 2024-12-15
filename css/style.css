@@ -12,6 +12,8 @@
 body{
     margin-top: 70px;
     scroll-behavior: smooth;
+    font-family:Montserrat,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 #insta{
     border: 1px solid;
