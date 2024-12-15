@@ -5,6 +5,10 @@
         font-weight: 440;
         
     }
+    #logo:hover{
+        color:#ffa5af ;
+        transition: all .2s ease;
+        }
 
 /*<uniquifier>: Use a unique and descriptive class name*/
 /* <weight>: Use a value from 100 to 900*/
@@ -14,11 +18,29 @@ body{
     margin-top:70px;
   
 }
-/* #insta{
+ #insta{
     border: 1px solid;
     border-radius: 1px;
-    background-color: ;
-} */
+    background-color:#ffa5af;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 5px;
+    border-color:transparent;
+    text-align: center;
+} 
+#insta:hover{
+    opacity: .95;
+}
+#insta span{
+    color:white
+    
+}
+#insta i{
+    text-align:end;
+    font-size: 1.55em;
+    color:#E1306C;
+}
+
 .logo{
     font-family:Jomolhari;
     
@@ -29,6 +51,7 @@ padding:5px;
 
 }
 #search-box{
+    border: 1px solid #ffa5af;
     border-radius: 0px 5px 5px 0px;
     border-left:none ;
 }
@@ -36,9 +59,14 @@ padding:5px;
     width: 25em;
     }
 #sbtn{
+    border: 1px solid #ffa5af;
+
     border-radius: 5px 0px 0px 5px;
     border-right: none;
 
+}
+#sbtn i{
+    color:#ffa5af;
 }
 #Notifications{
     display: inline-block;

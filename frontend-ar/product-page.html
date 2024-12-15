@@ -25,83 +25,140 @@
 </head>
 <body class="container-fluid">
  
-    <header>
+  <header>
         
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar" >
-            <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" id="logo">Folla Accessories</a>
-            <button 
-              class="navbar-toggler" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#main-menu" 
-              aria-controls="main-menu" 
-              aria-expanded="false" 
-              aria-label="Toggle navigation"
-              id="toggler">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-           
-            <div class="container-fluid">
-              
-              <div class="collapse navbar-collapse" id="main-menu">
-                <div class="m-auto d-flex flex-row">
-                  <form role="search">
-                  <div class="input-group">
-                  <input class="form-control border-success " type="search" placeholder="Search" aria-label="Search" id="search-box">
-                  <span class="input-group-append">
-                  <button class="btn btn-outline-success m-0" type="submit" id='sbtn' ><i class="fa-solid fa-magnifying-glass"></i></button>
-                  </span>
-                </div>
-                </form>
-              </div>
-                <ul class="navbar-nav ms-10 mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="shop.html">Shop</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" 
-                    href="#" 
-                    role="button"
-                     data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      <i class="fa-solid fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-lg-end">
-                      <li><a class="dropdown-item " href="#"><i class="fa-solid fa-right-to-bracket p-2"></i><span class="p-2">Login</span></a></li>
-                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus p-2"></i> <span class="p-2">Signup</span></a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bell"></i> <span class="p-2">Notifications</span><span class="p-2">1</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                   <a class="nav-link" href="frontend-ar/index.html">العربية</a>
-                  </li>
-                  
-                </ul>
-                
-              </div>
-            </div>
-               
-            </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light " id="navbar" >
+      <div class="container-fluid d-flex flex-row bd-highlight">
+        
+      <a class="navbar-brand" href="index.html" id="logo">Folla Accessories</a>
+      
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#main-menu" 
+      aria-controls="main-menu" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        
+        <div class="collapse navbar-collapse" id="main-menu">
+          <div class="m-auto flex-row-reverse">
+            <form role="search">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="بحث" aria-label="Search" id="search-box">
+              <span class="input-group-append">
+              <button class="btn  m-0" type="submit" id='sbtn' ><i class="fa-solid fa-magnifying-glass"></i></button>
+              </span>
+          </div>
+          </form>
+        </div>
+          <ul class="navbar-nav ms-10 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">المتجر</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button"
+               data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-start">
+                <li><a class="dropdown-item " href="user-membership/login.html"><i class="fa-solid fa-right-to-bracket p-2"></i><span class="p-1">تسجيل الدخول</span></a></li>
+                <li><a class="dropdown-item" href="user-membership/signup.html"><i class="fa-solid fa-plus p-2"></i> <span class="p-2">انشاء حساب</span></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Notifications/Notifications.html"><i class="fa-solid fa-bell p-2"></i> <span class="p-2">الاشعارات</span><span class="p-2">1</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">EN</a>
+             </li>
+          </ul>
+          
+        </div>
+      </div>
+         
+      </nav>
+  </header>
     <section>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-5">
-            <picture>
-                <img class="">
-            </picture>
-            </div>
-            <div class="col">
-                <form>
-                    
 
+            <div class="row d-flex flex-row">
+              <div class="col-md-3">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../images/Dream-Catcher-Bracelet.webp" class="d-block w-100" alt="...">
                     </div>
+                    <div class="carousel-item">
+                      <img src="../images/dream-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <video class="w-75" controls>
+                        <source src="../images/dream-catcher-bracelet.mp4" type="video/mp4">
+                      </video>
+                      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+          </div>
+          
+         
+            <div class="col-md-3">
+              <p class="display-6">Dream Catcher Bracelet</p>
+
+                <form>
+                  <div class="input-group mb-3 d-flex flex-row-reverse">
+                   
+                    <button class="input-group-text">+</button>
+                    <input type="number" class="form-control" min="1" max="5" aria-label="الكمية" value="1">
+                    
+                    <button class="input-group-text" >-</button>
+                  </div>
+                  
+                    
+                 <p>السعر</p>
+                  <p>45<span>₪</span></p>
+                  <span>ادخل رمز الكوبون للحصول على خصم</span>
+                  <div class="input-group d-flex flex-row-reverse ">
+                    
+                    <button type="button" class="btn btn-outline-success">أدخل الرمز</button>
+                    <input type="text" class="form-control" aria-label="رمز الكوبون" placeholder="رمز الكوبون....">
+                    
+                  </div>
+                  <p> الدفع عند الاستلام</p>
+                  <div class="input-group d-flex flex-row-reverse">
+                    <input type="checkbox">
+                    <label>أوافق على سياسة <a href="#">الشراء</a></label>
+                  </div>
+                  <div class="text-center p-5">
+                  <button class="btn btn-success"> احجز الطلب</button>
+                </div>
+                    </div>
+
+                    
                 </form>
+                
             </div>
             </div>
 

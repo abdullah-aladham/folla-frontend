@@ -48,10 +48,10 @@
                 <div class="m-auto d-flex flex-row">
                   <form role="search">
                   <div class="input-group">
-                  <input class="form-control border-success " type="search" placeholder="Search" aria-label="Search" id="search-box">
-                  <span class="input-group-append">
-                  <button class="btn btn-outline-success m-0" type="submit" id='sbtn' ><i class="fa-solid fa-magnifying-glass"></i></button>
-                  </span>
+                    <input class="form-control" type="search" placeholder="بحث" aria-label="Search" id="search-box">
+                    <span >
+                    <button class="btn  m-0" type="submit" id='sbtn' ><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </span>
                 </div>
                 </form>
               </div>
@@ -90,18 +90,76 @@
     </header>
     <section>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-5">
-            <picture>
-                <img class="">
-            </picture>
-            </div>
-            <div class="col">
-                <form>
-                    
 
+            <div class="row d-flex flex-row">
+              <div class="col-md-3">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/Dream-Catcher-Bracelet.webp" class="d-block w-100" alt="...">
                     </div>
+                    <div class="carousel-item">
+                      <img src="images/dream-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <video class="w-75" controls>
+                        <source src="images/dream-catcher-bracelet.mp4" type="video/mp4">
+                      </video>
+                      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+          </div>
+          
+         
+            <div class="col-md-3">
+              <p class="display-6">Dream Catcher Bracelet</p>
+
+                <form>
+                  <div class="input-group mb-3 d-flex flex-row flex-sm-col flex-md-col">
+                    <button class="input-group-text" >-</button>
+                    
+                    <input type="number" class="form-control" min="1" max="5" aria-label="الكمية" value="1">
+                    <button class="input-group-text">+</button>
+                    
+                  </div>
+                  
+                    
+                 <p>السعر</p>
+                  <p>45<span>₪</span></p>
+                  <span>Insert Coupon Code to get Discount</span>
+                  <div class="input-group d-flex flex-row flex-md-col flex-sm-col ">
+                    
+                    <input type="text" class="form-control" aria-label="Coupon Code" placeholder="Coupon Code...">
+                    <button type="button" class="btn btn-outline-success">Enter Code</button>
+
+                  </div>
+                  <p> الدفع عند الاستلام</p>
+                  <div class="input-group d-flex flex-row">
+                    <input type="checkbox">
+                    <label>I Agree to <a href="#">Purchase Policy</a></label>
+                  </div>
+                  <div class="text-center p-5">
+                  <button class="btn btn-success"> Place order</button>
+                </div>
+                    </div>
+
+                    
                 </form>
+                
             </div>
             </div>
 
