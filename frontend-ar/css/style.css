@@ -16,8 +16,8 @@
 body{
     direction: rtl;   
     margin-top:70px;
-    font-family:Noto Sans Arabic;
-  
+    font-family:Noto Sans Arabic,Noto Naskh Arabic;
+    /* Noto Sans Arabic, al-gemah-alhoda,DroidNaskh-Regular*/
 }
  #insta{
     border: 1px solid;
