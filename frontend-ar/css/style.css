@@ -16,7 +16,7 @@
 body{
     direction: rtl;   
     margin-top:70px;
-    font-family:Noto Sans Arabic,Noto Naskh Arabic;
+    font-family:Montserrat,Noto Sans Arabic,Noto Naskh Arabic;
     /* Noto Sans Arabic, al-gemah-alhoda,DroidNaskh-Regular*/
 }
  #insta{
@@ -39,7 +39,8 @@ body{
 #insta i{
     text-align:end;
     font-size: 1.55em;
-    color:#E1306C;
+    /* color:#E1306C; */
+    color:#fff
 }
 
 
