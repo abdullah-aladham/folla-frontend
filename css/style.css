@@ -139,6 +139,15 @@ transition: .1 ease;
     max-height: 55px;
     max-width: 55px;
 }
+#fp-submit{
+    border: 1px solid #ffa5af;
+    color: #fff;
+    background-color: #ffa5af;
+}
+/* #fp-submit:hover{
+    background-color: #ffa5af;
+    color:white;
+} */
 
 /* @media  (max-width:360px){
 body{
