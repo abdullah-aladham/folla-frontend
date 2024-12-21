@@ -52,7 +52,7 @@ body{
 #navbar li{
 padding:5px;
 }
-#search-box{
+#search-box,#prod-search{
     border: 1px solid #ffa5af;
     border-radius: 5px 0px 0px 5px;
     border-right:none ;
@@ -70,6 +70,14 @@ padding:5px;
 #sbtn i{
         color:#ffa5af;
     }
+    
+#sbtn:hover{
+
+        background-color: #ffa5af;
+    }
+  #sbtn:hover i{
+    color:white;
+  }
 #Notifications{
     display: inline-block;
     padding: 15px;

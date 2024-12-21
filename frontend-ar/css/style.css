@@ -53,7 +53,7 @@ body{
 padding:5px;
 
 }
-#search-box{
+#search-box,#prod-search{
     border: 1px solid #ffa5af;
     border-radius: 0px 5px 5px 0px;
     border-left:none ;
@@ -130,7 +130,20 @@ margin-top: -220px;
    padding: 5px;
    font-size: 1.3em;
    }
-   
+    #chat-container{
+        border: 1px solid #ffa5af;
+        border: 30px;
+    } 
+   #chat{
+    max-width: 25px;
+    max-height: 25px;
+   }
+   #wish{
+    color:#9c1b2a;
+   }
+   #wish:hover{
+    color: #000 ;
+   }
     @media  (max-width:360px){
     body{
         font-size: 0.8em;
