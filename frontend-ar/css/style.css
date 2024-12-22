@@ -134,6 +134,8 @@ margin-top: -220px;
         border: 1px solid #ffa5af;
         border: 30px;
         background-color: #ffa5af;
+      
+
         
     } 
 
@@ -148,7 +150,7 @@ margin-top: -220px;
    #wish:hover{
     color: #000 ;
    }
-    @media  (max-width:360px){
+    /* @media  (max-width:360px){
     body{
         font-size: 0.8em;
         margin-top: 0.7em;}
@@ -187,5 +189,113 @@ margin-top: -220px;
     #shop{
        font-size:0.9em
     }
-}
+} */
 
+ /* @media (max-width: 770px) {
+   body,#about-us-title ,#Products-title {
+      /* padding: calc(1.325rem ); */
+      /* font-size: 1.1em; */
+      /* font-size: 0.06rem; */
+       /* 1.125rem is small enough, so RFS won't rescale this */
+     /* }
+     #about-us-subtitle {
+        font-size:1em;
+     }
+     #about-us-p{
+        font-size: 0.85em;
+     } */
+    
+  /* }  */
+  /* @media (max-width: 650px) {
+    body,#about-us-title,#Products-title {
+       padding: calc(1.325rem ); */
+       /* font-size: 1em; */
+       /* font-size: 0.06rem; */
+        /* 1.125rem is small enough, so RFS won't rescale this */
+      /* }
+      #about-us-subtitle {
+         font-size:1.1em;
+      }
+      #about-us-p{
+         font-size: 0.95em;
+      } */
+     
+   /* }  */
+   /* @media (max-width: 550px) {
+    body,#about-us-title,#Products-title { */
+       /* padding: calc(1.325rem ); */
+       /* font-size: 1em; */
+       /* font-size: 0.06rem; */
+        /* 1.125rem is small enough, so RFS won't rescale this */
+      /* }
+      #about-us-subtitle {
+         font-size:1.1em;
+      }
+      #about-us-p{
+         font-size: 0.95em;
+      } */
+     
+   /* }  */
+   /* @media (max-width: 500px) {
+    body,#about-us-title,#Products-title { */
+       /* padding: calc(1.325rem ); */
+       /* font-size: 1em; */
+       /* font-size: 0.06rem; */
+        /* 1.125rem is small enough, so RFS won't rescale this */
+      /* }
+      #about-us-subtitle {
+         font-size:1.1em;
+      }
+      #about-us-p{
+         font-size: 0.95em;
+      }
+      */
+   /* }  */
+   /* @media (max-width: 490px) {
+    body,#about-us-title,#Products-title { */
+       /* padding: calc(1.325rem ); */
+       /* font-size: 1em; */
+       /* font-size: 0.06rem; */
+        /* 1.125rem is small enough, so RFS won't rescale this */
+      /* }
+      #about-us-subtitle {
+         font-size:1.1em;
+      }
+      #about-us-p{
+         font-size: 0.95em;
+      } */
+     
+   /* }  */
+   /* @media (max-width: 450px) {
+    body,#about-us-title,#Products-title {
+       font-size: 1em;
+       
+      }
+      #about-us-subtitle {
+         font-size:1.1em;
+      }
+      #about-us-p{
+         font-size: 0.95em;
+      } */
+     
+   /* }  */
+   /* @media (max-width: 400px) {
+    body,#about-us-title,#Products-title {
+       /* padding: calc(1.325rem ); */
+       /* font-size: 1em; */
+    /* }
+      #about-us-subtitle {
+         font-size:1.1em;
+      }
+      #about-us-p{
+         font-size: 0.95em;
+      } */
+     
+   /* }  */ 
+   /* @media (max-width: 660px) { */
+    /* * { */
+      /* padding: calc(1.325rem + 0.9vw); */
+      /* font-size: 1.6rem;  */
+      /* 1.125rem is small enough, so RFS won't rescale this */
+    /* } */
+  /* }*/
