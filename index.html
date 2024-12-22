@@ -46,7 +46,7 @@
               
               <div class="collapse navbar-collapse" id="main-menu">
                 <div class="m-auto d-flex flex-row">
-                  <form role="search">
+                  <form class="form-floating"role="search">
                   <div class="input-group">
                   <input class="form-control  " type="search" placeholder="Search" aria-label="Search" id="search-box">
                   <span class="input-group-append">
@@ -199,32 +199,35 @@
 <div class="container d-flex justify-content-center">
   
   
-    <form>
+    <form >
       <div class="row ">
       <div class="col-md-5">
     <div class="form-group">
-      <label for="Name">Your name</label>
       <input type="text" id="Name"class="form-control "  placeholder="Enter Your name" required>
+      <label for="Name">Your name</label>
+
     </div>
 </div>
 <div class="col-md-5">
-    <div class="form-group">
-      <label for="Email">Your Email</label>
+    <div class="form-group form-floating">
+      
       <input type="email" class="form-control " id="Email" placeholder="Enter Your Email"required>
+      <label for="Email">Your Email</label>
     </div>
     </div>
     <div class="row">
     <div class="col-md-5 ">
-    <div class="form-group ">
-        <label for="Phone">Phone number</label>
+    <div class="form-group form-floating ">
         <input type="text" class="form-control col-sm-2 col-form-label " id="Phone" placeholder="Enter Phone Number"required>
+        <label for="Phone">Phone number</label>
+
       </div>
       </div>
       <div class="row ">
       <div class="col-md text-center">
-      <div class="form-group">
-        <label for="Subject" class="form-label">Subject</label>
+      <div class="form-group form-floating mb-3">
         <textarea class="form-control "  rows="3" placeholder="Your text here..." id="Subject"></textarea>
+        <label for="Subject" class="form-label">Subject</label>
 
       </div>
     </div>

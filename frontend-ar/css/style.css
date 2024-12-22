@@ -133,10 +133,14 @@ margin-top: -220px;
     #chat-container{
         border: 1px solid #ffa5af;
         border: 30px;
+        background-color: #ffa5af;
+        
     } 
+
    #chat{
     max-width: 25px;
     max-height: 25px;
+    color:white;
    }
    #wish{
     color:#9c1b2a;

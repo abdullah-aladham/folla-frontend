@@ -46,7 +46,7 @@
               
               <div class="collapse navbar-collapse" id="main-menu">
                 <div class="m-auto d-flex flex-row">
-                  <form role="search">
+                  <form  class="form-floating" role="search">
                   <div class="input-group">
                   <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="search-box">
                   <span class="input-group-append">
@@ -101,36 +101,39 @@
               </div> 
               <p class=" m-auto display-5">or</p>
 
-            <form >
+            <form class="form-floating" >
                 
-                <div class="mb-3 col-md-8 text-center">
-                    <label for="First-Name">First Name</label>
+                <div class="mb-3 col-md-8 text-center form-floating">
                     <input type="text" class="form-control " placeholder="Enter Email" id="First-Name" required>
-                </div>
-                <div class="mb-3 col-md-8 text-center">
-                    <label for="Last-Name">Last Name</label>
+                    <label for="First-Name">First Name</label>
+
+                  </div>
+                <div class="mb-3 col-md-8 text-center form-floating">
                     <input type="text" class="form-control " placeholder="Enter Email" id="Last-Name" required>
-                </div>
-                <div class="mb-3 col-md-8 text-center">
-                    <label for="Email">Email</label>
+                    <label for="Last-Name">Last Name</label>
+                  </div>
+                <div class="mb-3 col-md-8 text-center form-floating">
                     <input type="text" class="form-control" placeholder="Enter Email" id="Email"required>
-                </div>
-                <div class="mb-3 col-md-8 text-center">
-                    <label for="username">Username</label>
-                    <div class="input-group flex-nowrap">
+                    <label for="Email">Email</label>
+                  </div>
+                <div class="mb-3 col-md-8 text-center ">
+                    <!-- <label for="username">Username</label> -->
+                    <div class="input-group flex-nowrap ">
                         <span class="input-group-text" id="username">@</span>
                         <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="username">
                       </div>
                 </div>
-                <div class="mb-3 col-md-8 text-center">
-                    <label for="Phone">Phone</label>
+                <div class="mb-3 col-md-8 text-center form-floating">
                     <input type="text" class="form-control" placeholder="Enter phone number" id="Phone"required>
-                </div>
-                <div class="mb-3 col-md-8 text-center">
-                    <label for="bio">bio</label>
+                    <label for="Phone">Phone</label>
+
+                  </div>
+                <div class="mb-3 col-md-8 text-center form-floating">
                     <textarea class="form-control w-100"  rows="3" placeholder="Your text here..." id="Subject"></textarea>
-                </div>
-                <div class="mb-3 form-check">
+                    <label for="bio">bio</label>
+
+                  </div>
+                <div class="mb-3 form-check ">
                    <input type="checkbox" class="form-check-input">
                     <label class="form-check-label" >i agree to <a href="#">privacy policy</a>and <a href="#">terms and conditions</a> policies</label>
 
