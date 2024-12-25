@@ -22,9 +22,10 @@
     <!--end of google fonts-->
 <!--fontawesome imports-->
 <link rel="stylesheet" href="css/css/all.min.css">
+<script src="js/index.js"></script>
 </head>
-<body class="container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
- 
+<body class="container container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
+ <noscript><h1>You need to enable JavaScript to run the website</h1></noscript>
     <header>
         
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar" >
@@ -89,7 +90,7 @@
             </nav>
     </header>
         <!-- <section >  -->
-            <section name="main-carousel">
+            <section name="main-carousel" id="top">
                  <!--carousel section-->
                  
                  <div class="container container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
@@ -141,7 +142,7 @@
         </section>
     </section><!--end of contatiner section-->
     <section>
-    <p  id="Products-title">Our Products</p>
+    <p  id="Products-title" class="text-sm">Our Products</p>
     <div class="row d-flex flex-sm-column flex-md-row flex-lg-row flex-xl-row ">
       <div class="col-md-3">     
       <div class="card" style="width: 16rem;">
@@ -238,8 +239,49 @@
     <button type="reset"class="btn btn-danger btn-center">Clear</button>
     </div>
   </form>
+  
 </div>
   </div>
+ 
+  <button type="button" 
+  class="btn btn-primary  rounded-pill translate-middle end-0 position-fixed" 
+  id="chat-container"> 
+  <i class="fa-regular fa-message " ></i>
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"  data-bs-whatever="@chat-with-us">1 <span class="visually-hidden">unread messages</span></span>
+</button>
+<div class="modal fade"
+               tab-index="-1" 
+               aria-labelledby="chat-with-us"
+                id="#chat-with-us"
+                aria-hidden="true"
+                >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Chat</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form> <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+              
+                    </div>
+                  </div>
+                </div>
+
+              </div>
     </section>
         <footer>
             <hr>
@@ -294,6 +336,11 @@
           <div class="text-lg-start text-sm-center">     
             <span >Done with ❤️ by <a href="https://www.linkedin.com/in/abdullah-aladham/">Abdullah Aladham</a></span>
     </div>
+    <!-- <div class="postion-relative"> -->
+          <a href="#top" class="btn btn-primary  rounded-pill translate-middle  start-3 top-1 position-sticky" id="back-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <!-- </div> -->
+
         </footer>
     </body>
 </html>

@@ -32,7 +32,7 @@
   
 </div>
   
-    <header>
+    <header >
         
       <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light " id="navbar" >
         <div class="container d-flex flex-row bd-highlight">
@@ -94,8 +94,8 @@
            
         </nav>
     </header>
-        <section class=" container"> 
-            <section name="main-carousel">
+        <section class=" container" id="top" > 
+            <section name="main-carousel" >
                  <!--carousel section-->
                  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
@@ -236,8 +236,40 @@
               </form>
             </div>
               </div>
-              <button type="button" class="btn btn-primary position-relative top-0 end-0 translate-middle rounded-pill position-fixed" id="chat-container"><i class="fa-regular fa-comment"  id="chat"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">1 <span class="visually-hidden">unread messages</span></span></button>
+              <button type="button"
+               class="btn btn-primary  rounded-pill translate-middle  position-fixed" 
+               id="chat-container" 
+              data-bs-toggle="modal"
+              data-bs-target="#chat-with-us">
+               <i class="fa-regular fa-message " ></i>
+               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">1 <span class="visually-hidden">unread messages</span></span>
+              </button>
+              <!--chat with us modal-->
+              <div class="modal fade"
+               tab-index="-1" 
+               aria-labelledby="chat-with-us"
+                id="#chat-with-us"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Chat</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form> <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div></form>
+                    </div>
+                  </div>
+                </div>
 
+              </div>
                 </section>
         <footer>
             <hr>
@@ -284,6 +316,8 @@
                 </div>
             </div>
            </div>
+           <a href="#top" class="btn btn-primary  rounded-pill translate-middle  start-3 top-1 position-sticky" id="back-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+
         </footer>
     </body>
 </html>

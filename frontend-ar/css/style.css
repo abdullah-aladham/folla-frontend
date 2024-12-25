@@ -131,6 +131,13 @@ margin-top: -220px;
    font-size: 1.3em;
    }
     #chat-container{
+        position: fixed;
+        left: 5%;
+        bottom: 9%;
+        /* right: 0; */
+        /* top:0; */
+        /* width: 30px;
+        height: 30px; */
         border: 1px solid #ffa5af;
         border: 30px;
         background-color: #ffa5af;
@@ -150,6 +157,20 @@ margin-top: -220px;
    #wish:hover{
     color: #000 ;
    }
+   #back-to-top{
+    position: fixed;
+    top:10%;
+    right: 3%;
+    bottom: 9%;
+    /* right: 0; */
+    /* top:0; */
+    /* width: 30px;
+    height: 30px; */
+    border: 1px solid #ffa5af;
+    border: 30px;
+    background-color: #ffa5af;
+}
+
     /* @media  (max-width:360px){
     body{
         font-size: 0.8em;

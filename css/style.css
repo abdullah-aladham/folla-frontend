@@ -144,6 +144,34 @@ transition: .1 ease;
     color: #fff;
     background-color: #ffa5af;
 }
+#chat-container{
+    position: fixed;
+    right: 3%;
+    bottom: 9%;
+    /* right: 0; */
+    /* top:0; */
+    /* width: 30px;
+    height: 30px; */
+    border: 1px solid #ffa5af;
+    border: 30px;
+    background-color: #ffa5af;
+  
+
+
+} 
+#back-to-top{
+    position: fixed;
+    top:10%;
+    right: 3%;
+    bottom: 9%;
+    /* right: 0; */
+    /* top:0; */
+    /* width: 30px;
+    height: 30px; */
+    border: 1px solid #ffa5af;
+    border: 30px;
+    background-color: #ffa5af;
+}
 /* #fp-submit:hover{
     background-color: #ffa5af;
     color:white;
