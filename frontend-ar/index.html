@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" data-bs-theme="" id="htmlPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,12 +23,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jomolhari&family=Mea+Culpa&family=Meow+Script&family=Merienda:wght@300..900&family=Noto+Sans+Arabic:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-
+<script src="js/index.js"></script>
     <!--end of google fonts-->
 <!--fontawesome imports-->
 <link rel="stylesheet" href="css/css/all.min.css">
 </head>
-<body class="container container-fluid container-lg container-md container-sm container-xl container-xxl">
+<body class="container container-fluid container-lg container-md container-sm container-xl container-xxl" id="body">
   
 </div>
   
@@ -62,7 +62,7 @@
             </div>
             </form>
           </div>
-            <ul class="navbar-nav ms-10 mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-10 mb-2 mb-lg-0 justify-content-end">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
               </li>
@@ -87,6 +87,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">EN</a>
                </li>
+               <li><input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <span class="ball"></span>
+                </label></li>
             </ul>
             
           </div>
@@ -95,9 +101,9 @@
         </nav>
     </header>
         <section class=" container" id="top" > 
-            <section name="main-carousel" >
+            <!-- <section name="main-carousel" >
                  <!--carousel section-->
-                 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                 <!-- <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
                     <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -123,14 +129,14 @@
                     <span class="visually-hidden">السابق</span>
                   </button>
                 </div>
-            </section>
+            </section> --> 
 </section>
         <section id="about-us"  class="container container-fluid container-lg container-md container-sm container-xl container-xxl">
             <!--about us section-->
             <div class="about-us">
               
-                <p class="font-weight-bold text-center display-1" id="about-us-title">Folla Accessories</p>
-                    <p id="about-us-subtitle"> 🌟دٍقّة💯,أَناقة🥰,لمعان</p>
+                <h1 class="font-weight-bold text-end" id="about-us-title">Folla Accessories</h1>
+                    <h2 id="about-us-subtitle"> 🌟دٍقّة💯,أَناقة🥰,لمعان</h2>
         <p id="about-us-p">اكتشفي مجموعتنا المميزة من الإكسسوارات الأنيقة،<br> لتعكس أسلوبك وذوقك بأبهى طريقة! 💎 💮❤️</p>
                 <picture>
                     <img src="images/Dream-Catcher-Bracelet.webp" alt="Dream-Catcher-Bracelet" id="about-us-img" ><!---->

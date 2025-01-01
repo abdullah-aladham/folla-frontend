@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="" id="htmlPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +22,8 @@
     <!--end of google fonts-->
 <!--fontawesome imports-->
 <link rel="stylesheet" href="css/css/all.min.css">
-<script src="js/index.js"></script>
 </head>
-<body class="container container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
+<body  id="body" class="container container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
  <noscript><h1>You need to enable JavaScript to run the website</h1></noscript>
     <header>
         
@@ -45,8 +44,8 @@
            
             <div class="container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
               
-              <div class="collapse navbar-collapse" id="main-menu">
-                <div class="m-auto d-flex flex-row">
+              <div class="collapse navbar-collapse " id="main-menu">
+                <div class="m-auto d-flex flex-row float-center">
                   <form class="form-floating"role="search">
                   <div class="input-group">
                   <input class="form-control  " type="search" placeholder="Search" aria-label="Search" id="search-box">
@@ -56,6 +55,7 @@
                 </div>
                 </form>
               </div>
+
                 <ul class="navbar-nav ms-10 mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -63,6 +63,14 @@
                   <li class="nav-item">
                     <a class="nav-link" href="shop.html">Shop</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cart.html"> <img src="images/cart.svg" alt="cart-items" id="cart"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="wishlist.html"> <img src="images/wishlist.svg" alt="wishlist" id="wishlist"></a>
+                  </li>
+                  
+                    
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" 
                     href="#" 
@@ -71,6 +79,7 @@
                       aria-expanded="false">
                       <i class="fa-solid fa-user"></i>
                     </a>
+                    
                     <ul class="dropdown-menu dropdown-menu-lg-end">
                       <li><a class="dropdown-item " href="user-membership/login.html"><i class="fa-solid fa-right-to-bracket p-2"></i><span class="p-2">Login</span></a></li>
                       <li><a class="dropdown-item" href="user-membership/signup.html"><i class="fa-solid fa-plus p-2"></i> <span class="p-2">Signup</span></a></li>
@@ -78,9 +87,16 @@
                       <li><a class="dropdown-item" href="Notifications/Notifications.html"><span class="p-2">Notifications</span><span class="p-2">1</span><i class="fa-solid fa-bell"></i> </a></li>
                     </ul>
                   </li>
+                  
                   <li class="nav-item">
                    <a class="nav-link" href="frontend-ar/index.html">العربية</a>
                   </li>
+                  <li><input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <span class="ball"></span>
+                    </label></li>
                   
                 </ul>
                 
@@ -90,9 +106,10 @@
             </nav>
     </header>
         <!-- <section >  -->
-            <section name="main-carousel" id="top">
+            <!-- <section name="main" id="top"> -->
+
                  <!--carousel section-->
-                 
+<!--                  
                  <div class="container container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
                   <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" >
                     <div class="carousel-indicators">
@@ -120,22 +137,22 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                  </div>
+                  </div> -->
              
-            </section>
+            <!-- </section> -->
 <!-- </section> -->
-        <section>
+        <section >
             <!--about us section-->
             <div class="about-us" id="about-us">
-                <p id="about-us-title" >Folla Accessories</p>
-                    <p id="about-us-subtitle"class="text-left"> 🌟Precision💯, Elegance🥰, Shine
+                <h1 class="text-left" >Folla Accessories</h1>
+                    <h2 id="about-us-subtitle"class="text-left"> 🌟Precision💯, Elegance🥰, Shine
 
-                        </p>
-        <p id="about-us-p"class="text-left">Discover our unique collection of elegant accessories,<br> to reflect your style and taste in the most beautiful way! 💎 💮❤️</p>
+                    </h2>
+        <p class="text-left">Discover our unique collection of elegant accessories,<br> to reflect your style and taste in the most beautiful way! 💎 💮❤️</p>
                 
                     <img src="images/Dream-Catcher-Bracelet.webp" alt="Dream-Catcher-Bracelet" id="about-us-img">
-              <div class="text-center m-auto">
-                <a class="btn btn-outline-success text-center" id="shop">Shop now</a>
+              <div class="text-center float-start">
+                <a class="btn btn-outline-success text-center" href="shop.html" id="shop">Shop now</a>
               </div>
                     
             </div>
@@ -342,5 +359,7 @@
     <!-- </div>  -->
 
         </footer>
+        <script src="js/index.js"></script>
+
     </body>
 </html>
