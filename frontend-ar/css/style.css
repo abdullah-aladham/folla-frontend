@@ -15,9 +15,19 @@
 
 body{
     direction: rtl;   
-    margin-top:70px;
+    margin-top:120px;
     font-family:Montserrat,Noto Sans Arabic,Noto Naskh Arabic;
     /* Noto Sans Arabic, al-gemah-alhoda,DroidNaskh-Regular*/
+}
+#cart{
+    max-width: 24px;
+    max-height: 24px;
+    cursor: pointer;
+}
+#wishlist{
+    max-width: 24px;
+    max-height: 24px;
+    cursor: pointer;
 }
  #insta{
     border: 1px solid;
@@ -49,10 +59,11 @@ body{
     
 }
 
-#navbar-ar li{
+
+/* #navbar-ar li{
 padding:5px;
 
-}
+} */
 #search-box,#prod-search{
     border: 1px solid #ffa5af;
     border-radius: 0px 5px 5px 0px;
@@ -204,6 +215,12 @@ transition: transform 0.2s linear;
 }
 .checkbox{display: none;}
 
+
+@media(max-width:500px){
+    body{
+        font-size:0.8em;
+    }
+}
     /* @media  (max-width:360px){
     body{
         font-size: 0.8em;
