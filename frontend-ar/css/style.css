@@ -104,16 +104,16 @@ padding:5px;
 }
 .about-us{
     margin-bottom: 200px;
-    margin-left: 1%;
+    /* margin-left: 1%; */
 }
 #about-us-title{
     text-align: center;
-    font-size: 50px;
+    font-size: 0.1em;
     font-weight: bold;
 }
 #about-us-subtitle{
     font-family: 'MediaPro Heavy Condensed';
-    font-size: 2.4rem;
+    font-size: 0.1rem;
 }
 #about-us-p{
     font-size:20px;
@@ -125,7 +125,10 @@ margin-top: -220px;
 
 
 }
-
+#prod-sec-img1{
+    width: 0.6;
+    height: 0.1;
+}
 #Products-title{
     text-align: center;
        font-size: 50px;
