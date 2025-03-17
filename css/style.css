@@ -123,7 +123,7 @@ padding:5px;
 }
 #about-us-img{
 float: right;
-max-width:28% ;
+max-width:65% ;
 margin-top: -190px;
 
 
@@ -219,6 +219,27 @@ transition: transform 0.2s linear;
     transform: translateX(24px);
 }
 .checkbox{display: none;}
+#remove{
+    max-width: 24px;
+    max-height: 24px;
+    cursor: pointer;
+}
+#cart-quantity{
+    max-width:3em
+}
+#notif-logo{
+    max-width: 35px;
+    max-height: 35px;
+}
+/* #cart-quantity{
+max-width: 3em;
+/* max-height: 3em; */
+
+/* #card-quantity->.input-group-text{
+    max-width: 60px;
+    max-height: 60px;
+} */
+
 /* #fp-submit:hover{
     background-color: #ffa5af;
     color:white;

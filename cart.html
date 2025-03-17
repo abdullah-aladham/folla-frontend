@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en" data-bs-theme="" id="htmlPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,68 +32,86 @@
   
 </div>
   
-    <header>
+<header>
         
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light " id="navbar" >
-        <div class="container-fluid container container-sm contatiner container-md container-lg container-xl container-xxl d-flex flex-row bd-highlight">
-          
-        <a class="navbar-brand" href="index.html" id="logo">Folla Accessories</a>
-        
-        <button 
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar" >
+      <div class="container ">
+      <a class="navbar-brand" href="index.html" id="logo">Folla Accessories</a>
+      <button 
         class="navbar-toggler" 
         type="button" 
         data-bs-toggle="collapse" 
         data-bs-target="#main-menu" 
         aria-controls="main-menu" 
         aria-expanded="false" 
-        aria-label="Toggle navigation">
+        aria-label="Toggle navigation"
+       >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="container">
-          
-          <div class="collapse navbar-collapse" id="main-menu">
-            <div class="m-auto flex-row-reverse">
-              <form class="form-floating" role="search">
-              <div class="input-group">
-                <input class="form-control" type="search" placeholder="بحث" aria-label="Search" id="search-box">
-                <span class="input-group-append">
-                <button class="btn  m-0" type="submit" id='sbtn' ><i class="fa-solid fa-magnifying-glass"></i></button>
-                </span>
-            </div>
-            </form>
+     
+      <div class="container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
+        
+        <div class="collapse navbar-collapse " id="main-menu">
+          <div class="m-auto d-flex flex-row float-center">
+            <form class="form-floating"role="search">
+            <div class="input-group">
+            <input class="form-control  " type="search" placeholder="Search" aria-label="Search" id="search-box">
+            <span class="input-group-append">
+            <button class="btn  m-0" type="submit" id='sbtn' ><i class="fa-solid fa-magnifying-glass"></i></button>
+            </span>
           </div>
-            <ul class="navbar-nav ms-10 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">المتجر</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" 
-                href="#" 
-                role="button"
-                 data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <i class="fa-solid fa-user"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-lg-start">
-                  <li><a class="dropdown-item " href="user-membership/login.html"><i class="fa-solid fa-right-to-bracket p-2"></i><span class="p-1">تسجيل الدخول</span></a></li>
-                  <li><a class="dropdown-item" href="user-membership/signup.html"><i class="fa-solid fa-plus p-2"></i> <span class="p-2">انشاء حساب</span></a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="Notifications/Notifications.html"><i class="fa-solid fa-bell p-2"></i> <span class="p-2">الاشعارات</span><span class="p-2">1</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">EN</a>
-               </li>
-            </ul>
-            
-          </div>
+          </form>
         </div>
-           
-        </nav>
-    </header>
+
+          <ul class="navbar-nav ms-10 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html"> <img src="images/cart.svg" alt="cart-items" id="cart"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html"> <img src="images/wishlist.svg" alt="wishlist" id="wishlist"></a>
+            </li>
+            
+              
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button"
+               data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              
+              <ul class="dropdown-menu dropdown-menu-lg-end">
+                <li><a class="dropdown-item " href="user-membership/login.html"><i class="fa-solid fa-right-to-bracket p-2"></i><span class="p-2">Login</span></a></li>
+                <li><a class="dropdown-item" href="user-membership/signup.html"><i class="fa-solid fa-plus p-2"></i> <span class="p-2">Signup</span></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Notifications/Notifications.html"><span class="p-2">Notifications</span><span class="p-2">1</span><i class="fa-solid fa-bell"></i> </a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item">
+             <a class="nav-link" href="frontend-ar/index.html">العربية</a>
+            </li>
+            <li><input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label></li>
+            
+          </ul>
+          
+        </div>
+      </div>
+         
+      </nav>
+</header>
     <section id="Cart">
     <div class="container-fluid">
       <div class="row d-flex justify-sm-col justify-md-col justify-sm-col">
@@ -102,140 +120,212 @@
         </div>
       </div>
         <h1 class="text-center">Cart </h1>
-        <!-- <div class="col-md-2 "> -->
-        <!-- <table class="table table-danger table-hover ">
-           <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Prod. Name</th>
-                <th scope="col">Product Image</th>
-                <th scope="col">Product Description</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Price</th>
-                <th scope="col">Total Price </th>
-
-                <th scope="col"></th>
-
-                
-            </tr>
-           </thead>
-           <tbody>
-           
-            
-            <tr>
-                <td>1</td>
-                <td>Dream Catcher Bracelet</td>
-                <td><img src="images/Dream-Catcher-Bracelet.webp" alt="Dream catcher" class="w-25"></td>
-                <td >اسوارة dream catcher</td>
-                <td>2</td>
-                <td>45₪ (Shekel)</td>
-                <td>90₪ (Shekel)</td>
-                <td> <button class="btn btn-outline-success">شراء</button>
-                  <button class="btn btn-outline-danger">إزالة</button>
-                  </td>
-
-
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Fish Tail Necklace</td>
-                <td><img src="images/fish-tail-necklace.webp" alt="Fish Tail Necklace" class="w-25"></td>
-                <td >اسوارة dream catcher</td>
-                <td>1</td>
-                <td>55₪ (Shekel)</td>
-                <td>55₪ (Shekel)</td>
-
-                <td> <button class="btn btn-outline-success">شراء</button>
-                  <button class="btn btn-outline-danger">إزالة</button>
-                  </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Daisy Ring</td>
-                <td><img src="images/daisy-ring.webp" alt="Daisy Ring" class="w-25 h-25"></td>
-                <td >خاتم Daisy Ring</td>
-                <td>1</td>
-                <td>35₪ (Shekel)</td>
-                <td>35₪ (Shekel)</td>
-
-                <td> <button class="btn btn-outline-success">شراء</button>
-                  <button class="btn btn-outline-danger">إزالة</button>
-                </td>
-                </tr>
-            <tr>
-                <td>4</td>
-                <td>Floral Earrings</td>
-                <td><img src="images/floral-earrings.webp" alt="Floral Earrings" class="w-25 h-25"></td>
-                <td >قرط اذنين Floral Earrings</td>
-                <td>1</td>
-                <td>40₪ (Shekel)</td>
-                <td>40₪ (Shekel)</td>
-
-                <td> <button class="btn btn-outline-success">شراء</button>
-                    <button class="btn btn-outline-danger">إزالة</button></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-               
-                <td>المجموع</td>
-                <td>220₪ (Shekel)</td>
-                <td><button class="btn btn-outline-success">شراء</button>
-                  <button class="btn btn-outline-danger">إزالة الجميع</button></td>
-            </tr>
-           </tbody>
-        </table> -->
-        <!-- </div> -->
+       
+      <!-- <div class="row">
+        <div class="col-md-12"><h2>Shopping cart</h2></div>
+        
+      </div> -->
+      <div class="row border-bottom ">
+        <div class="col-md-1"><img src="images/cancel.svg" alt="remove item" id="remove"></div>
+        <div class="col-md-1"><span>1</span></div>
+        <div class="col-md-1"><span> Dream Catcher Bracelet</span></div>
+        <div class="col-md-2"><img src="images/Dream-Catcher-Bracelet.webp" alt="Dream catcher" class="w-75"></div>
+        <!-- <div class="co1-md-1"><span>اسوارة dream catcher</span></div> -->
+        <div class="col-md-1"><span> 1</span></div>
+        <div class="col-md-1"><span>45₪ (Shekel)</span></div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-md-1"><img src="images/cancel.svg" alt="remove item" id="remove"></div>
+        <div class="col-md-1"><span>2</span></div>
+        <div class="col-md-1"><span> Fish Tail Necklace</span></div>
+        <div class="col-md-2"> <img src="images/fish-tail-necklace.webp" alt="Fish Tail Necklace" class="w-75">        </div>
+        <!-- <div class="co1-md-1"><span>اسوارة dream catcher</span></div> -->
+        <div class="col-md-1"><span> 1</span></div>
+        <div class="col-md-1"><span>55₪ (Shekel)</span></div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-md-1"><img src="images/cancel.svg" alt="remove item" id="remove"></div>
+        <div class="col-md-1"><span>3</span></div>
+        <div class="col-md-1"><span> Daisy Ring</span></div>
+        <div class="col-md-2"><img src="images/daisy-ring.webp" alt="Daisy Ring" class="w-75"></div>
+        <!-- <div class="co1-md-1"><span>اسوارة dream catcher</span></div> -->
+        <div class="col-md-1"><span> 1</span></div>
+        <div class="col-md-1"><span>35₪ (Shekel)</span></div>
+      </div>
+      <div class="row ">
+        <div class="col-md-1"><img src="images/cancel.svg" alt="remove item" id="remove"></div>
+        <div class="col-md-1"><span>4</span></div>
+        <div class="col-md-1"><span> Floral Earrings</span></div>
+        <div class="col-md-2"><img src="images/floral-earrings.webp" alt="Floral Earrings" class="w-75"></div>
+        <!-- <div class="co1-md-1"><span>اسوارة dream catcher</span></div> -->
+        <div class="col-md-1"><span> 1</span></div>
+        <div class="col-md-1"><span>45₪ (Shekel)</span></div>
+      </div>
+      <div class="row"><div class="col"></div>
+      <div class="col"><span>Price</span></div>
+      <div class="col"><span>175₪ (Shekel)</span></div>
+      <!-- <div class="col"></div> -->
+      <div class="col"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+       Place order
+      </button></div>
+      </div>
+        
     </div>
   </section>
-    <footer>
-        <hr>
-       <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <h4 class="text-center text-md ">Folla Accessories</h4>
-                <p id="about-us-subtitle" "> 🌟دٍقّة💯,أَناقة🥰,لمعان</p>
-            </div>
-            <div class="col-md-2"><h4>روابط سريعة</h4>
+  <!--checkout modal-->
+  <!-- Button trigger modal -->
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h5>Payment Method</h5>
+          <select>
+            <option value="cash-on-delivery">Cash on delivery</option>
+            <option value="Free pick-up-point">Free pick-up point(Nablus only) </option>
+          </select>
+          <div>
+          <input type="checkbox" value="user-profile-data">place order for me (current user data)
+        </div>
+          <p class=" m-auto display-5">or</p>
+          <div class="mb-3 col-md-8 text-center form-floating">
+            <input type="text" class="form-control " placeholder="Enter Email" id="First-Name" required>
+            <label for="First-Name">First Name</label>
+
+          </div>
+        <div class="mb-3 col-md-8 text-center form-floating">
+            <input type="text" class="form-control " placeholder="Enter Email" id="Last-Name" required>
+            <label for="Last-Name">Last Name</label>
+          </div>
+        
+        <div class="mb-3 col-md-8 text-center form-floating">
+            <input type="text" class="form-control" placeholder="Enter phone number" id="Phone"required>
+            <label for="Phone">Phone</label>
+
+          </div>
+          <div class="mb-3 col-md-8 text-center form-floating">
+            <input type="text" class="form-control " placeholder="City name" id="City-Name" required>
+            <label for="Last-Name">City</label>
+          </div>
+          <div class="mb-3 col-md-8 text-center form-floating">
+            <input type="text" class="form-control " placeholder="Village Name" id="Village-name" required>
+            <label for="Last-Name">Village Name</label>
+          </div>
+          <div class="mb-3 col-md-8 text-center form-floating">
+            <input type="text" class="form-control " placeholder="Street Name" id="Street-Name" required>
+            <label for="Last-Name">Street Name</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" id="PaymentSuccessBtn" data-bs-dismiss="modal">Place Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--toast notification-->
+<div aria-live="polite" aria-atomic="true" class="position-relative">
+  <div class="toast-container top-25 end-0 p-3">
+
+ <div class="toast align-items-center text-bg-success border-0  " role="alert" aria-live="assertive" aria-atomic="true" id="OrderSuccessNotif">
+  <div class="d-flex">
+    <!-- <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div> -->
+    <div class="toast-header">
+      <img src="images/logo1.ico" class="rounded me-2" alt="folla-accessories-logo" id="notif-logo">
+      <strong class="me-auto">Order Status</strong>
+      <!-- <small>Folla Accessories</small> -->
+
+      <small>Just Now</small>
+    </div>
+    <div class="toast-body">
+      <span>Order Successfuly placed! ❤️</span>
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+
+</div>
+</div>
+  <footer>
+    <hr>
+   <div class="container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
+    <div class="row">
+        <div class="col">
+            <h3>Folla Accessories</h3>
+            <p >Delicacy💯, Chic🥰, Glitter💗</p>
+        </div>
+        <div class="col"><h4>Menu</h4>
+        <ul class="list-unstyled">
+            <li><a href="#about-us" id="footer-link">about us</a></li>
+            <li><a href="shop.html"id="footer-link">Products</a></li>
+            <li><a href="new-products.html"id="footer-link">New Products</a></li>
+
+
+        </ul>
+    </div>
+        <div class="col"><h4>More</h4>
             <ul class="list-unstyled">
-                <li><a href="#about-us" id="footer-link">من نحن</a></li>
-                <li><a href="shop.html"id="footer-link">منتجاتنا</a></li>
-                <li><a href="new-products.html"id="footer-link">المنتجات الجديدة</a></li>
+                <li><a href="user-membership/login.html"id="footer-link">Login</a></li>
+                <li><a href="user-membership/signup.html"id="footer-link">Signup</a></li>
 
 
             </ul>
         </div>
-            <div class="col-md-2"><h4>المزيد</h4>
-                <ul class="list-unstyled">
-                    <li><a href="user-membership/login.html"id="footer-link">تسجيل الدخول </a></li>
-                    <li><a href="user-membership/signup.html"id="footer-link">انشاء حساب</a></li>
+        <div class="col"><h4>Categories </h4>
+            <ul class="list-unstyled">
+                <li><a href="#"id="footer-link">Bracelet</a></li>
+                <li><a href="#"id="footer-link">Rings</a></li>
+                <li><a href="#"id="footer-link">Earrings</a></li>
+                <li><a href="#"id="footer-link">Necklace</a></li>
 
+            </ul>
+        </div>
+        <div class="col"><h4>Follow us at</h4>
+            <div  class="social_media">
+                <a href="https://www.facebook.com/profile.php?id=100094935185983"id="footer-link" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
+                <a href="https://www.instagram.com/folla_accessories/"id="footer-link" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                <a href="https://www.tiktok.com/@folla.accessories"id="footer-link"target="_blank"><i class="fa-brands fa-tiktok" style="color: #000000;"></i></a>
+                <a href="https://t.me/folla_accessories"id="footer-link" target="_blank"><i class="fa-brands fa-telegram" style="color: #000000;"></i></a>
 
-                </ul>
-            </div>
-            <div class="col-md-2"><h4>الأقسام </h4>
-                <ul class="list-unstyled">
-                    <li><a href="#"id="footer-link">أساور</a></li>
-                    <li><a href="#"id="footer-link">خواتم</a></li>
-                    <li><a href="#"id="footer-link">حلق اذنين</a></li>
-                    <li><a href="#"id="footer-link">عَقَد</a></li>
-
-                </ul>
-            </div>
-            <div class="col"><h4> لا تنسوا المتابعة ❤️</h4>
-                <div  class="social_media">
-                    <a href="https://www.facebook.com/profile.php?id=100094935185983"id="footer-link" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
-                    <a href="https://www.instagram.com/folla_accessories/"id="footer-link" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
-                    <a href="https://www.tiktok.com/@folla.accessories"id="footer-link" target="_blank"><i class="fa-brands fa-tiktok" style="color: #000000;"></i></a>
-                    <a href="https://t.me/folla_accessories"id="footer-link" target="_blank"><i class="fa-brands fa-telegram" style="color: #000000;"></i></a>
-
-                </div>
             </div>
         </div>
-       </div>
-    </footer>
+    </div>
+   </div>
+   
+   <div class="text-lg-center text-md-center text-sm-center">    
+           <span class="text-center">&#169; All rights reserved  to <a  id="footer-link"href="https://www.facebook.com/profile.php?id=100094935185983">Folla Accessories</a></span>
+
+  </div>
+  <div class="text-lg-start text-sm-center">     
+    <span >Done with ❤️ by <a href="https://www.linkedin.com/in/abdullah-aladham/">Abdullah Aladham</a></span>
+</div>
+<div class="postion-relative ">
+<div class="position-absolute top-100 start-0 translate-middle">
+
+<a href="#top" class="btn btn-primary  rounded-pill " id="back-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+</div>
+
+</div> 
+
+</footer>
+<!-- <script src="js/cart.js"></script> -->
+<script src="js/index.js"></script>
+<script src="js/notifications.js"></script>
     </body>
     </html>
