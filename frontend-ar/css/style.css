@@ -113,18 +113,20 @@ padding:5px;
 }
 #about-us-subtitle{
     font-family: 'MediaPro Heavy Condensed';
-    font-size: 0.1rem;
+    font-size: 2.1rem;
 }
 #about-us-p{
     font-size:20px;
 }
 #about-us-img{
-float: left;
-width:25% ;
-margin-top: -220px;
+    float: right;
+    max-width:65% ;
+    margin-top: -190px;
+    
+    
+    }
 
 
-}
 #prod-sec-img1{
     width: 0.6;
     height: 0.1;
@@ -217,8 +219,15 @@ transition: transform 0.2s linear;
     transform: translateX(24px);
 }
 .checkbox{display: none;}
-
-
+#remove{
+    max-width: 24px;
+    max-height: 24px;
+    cursor: pointer;
+}
+#notif-logo{
+    max-width: 35px;
+    max-height: 35px;
+}
 @media(max-width:500px){
     body{
         font-size:0.8em;

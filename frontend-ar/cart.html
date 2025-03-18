@@ -94,89 +94,150 @@
            
         </nav>
     </header>
+    <section id="Cart">
+
     <div class="container-fluid">
+      <div class="row d-flex justify-sm-col justify-md-col justify-sm-col">
+        <div class="col-md-4">
+          
+        </div>
+      </div>
         <h1 class="text-center">السلة </h1>
-        <table class="table table-danger table-hover">
-           <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">اسم المنتج</th>
-                <th scope="col">صورة المنتج</th>
-                <th scope="col">وصف المنتج</th>
-                <th scope="col">الكمية</th>
-                <th scope="col">سعر المنتج</th>
-                <th scope="col">السعر </th>
-
-                <th scope="col"></th>
-
-                
-            </tr>
-           </thead>
-           <tbody>
-           
+       
+      <!-- <div class="row">
+        <div class="col-md-12"><h2>Shopping cart</h2></div>
+        
+      </div> -->
+      <div class="row border-bottom ">
+        <div class="col-md-1"><img src="../images/cancel.svg" alt="remove item" id="remove"></div>
+        <div class="col-md-1"><span>1</span></div>
+        <div class="col-md-1"><span> Dream Catcher Bracelet</span></div>
+        <div class="col-md-2"><img src="images/Dream-Catcher-Bracelet.webp" alt="Dream catcher" class="w-75"></div>
+        <!-- <div class="co1-md-1"><span>اسوارة dream catcher</span></div> -->
+        <div class="col-md-1"><span> 1</span></div>
+        <div class="col-md-1"><span>45₪ (شيكل)</span></div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-md-1"><img src="../images/cancel.svg" alt="remove item" id="remove"></div>
+        <div class="col-md-1"><span>2</span></div>
+        <div class="col-md-1"><span> Fish Tail Necklace</span></div>
+        <div class="col-md-2"> <img src="images/fish-tail-necklace.webp" alt="Fish Tail Necklace" class="w-75">        </div>
+        <!-- <div class="co1-md-1"><span>اسوارة dream catcher</span></div> -->
+        <div class="col-md-1"><span> 1</span></div>
+        <div class="col-md-1"><span>55₪ (شيكل)</span></div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-md-1"><img src="../images/cancel.svg" alt="remove item" id="remove"></div>
+        <div class="col-md-1"><span>3</span></div>
+        <div class="col-md-1"><span> Daisy Ring</span></div>
+        <div class="col-md-2"><img src="../images/daisy-ring.webp" alt="Daisy Ring" class="w-75"></div>
+        <!-- <div class="co1-md-1"><span>اسوارة dream catcher</span></div> -->
+        <div class="col-md-1"><span> 1</span></div>
+        <div class="col-md-1"><span>35₪ (شيكل)</span></div>
+      </div>
+      <div class="row ">
+        <div class="col-md-1"><img src="../images/cancel.svg" alt="remove item" id="remove"></div>
+        <div class="col-md-1"><span>4</span></div>
+        <div class="col-md-1"><span> Floral Earrings</span></div>
+        <div class="col-md-2"><img src="images/floral-earrings.webp" alt="Floral Earrings" class="w-75"></div>
+        <!-- <div class="co1-md-1"><span>اسوارة dream catcher</span></div> -->
+        <div class="col-md-1"><span> 1</span></div>
+        <div class="col-md-1"><span>45₪ (شيكل)</span></div>
+      </div>
+      <div class="row"><div class="col"></div>
+      <div class="col"><span>السعر</span></div>
+      <div class="col"><span>175₪ (شيكل)</span></div>
+      <!-- <div class="col"></div> -->
+      <div class="col"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+       ارسال الطلب
+      </button></div>
+      </div>
+        
+    </div>
+    </div>
+    </section>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel"> ارسال الطلب</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <h5>طريقة الدفع</h5>
+              <select>
+                <option value="cash-on-delivery">الدفع عند الاستلام</option>
+                <option value="Free pick-up-point">نقطة استلام مجانية(في نابلس فقط) </option>
+              </select>
+              <div>
+              <input type="checkbox" value="user-profile-data">ارسل الطلب لدي (للمستخدم الحالي)
+            </div>
+              <p class=" m-auto display-5">أو</p>
+              <div class="mb-3 col-md-8 text-center form-floating">
+                <input type="text" class="form-control " placeholder="Enter Email" id="First-Name" required>
+                <label for="First-Name">الاسم الاول</label>
+    
+              </div>
+            <div class="mb-3 col-md-8 text-center form-floating">
+                <input type="text" class="form-control " placeholder="Enter Email" id="Last-Name" required>
+                <label for="Last-Name">اسم العائلة</label>
+              </div>
             
-            <tr>
-                <td>1</td>
-                <td>Dream Catcher Bracelet</td>
-                <td><img src="../images/Dream-Catcher-Bracelet.webp" alt="Dream catcher" class="w-25"></td>
-                <td >اسوارة dream catcher</td>
-                <td>2</td>
-                <td>45₪ (شيكل)</td>
-                <td>90₪ (شيكل)</td>
-                <td> <button class="btn btn-outline-success">شراء</button>
-                    <button class="btn btn-outline-danger">حذف</button></td>
-
-
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Fish Tail Necklace</td>
-                <td><img src="../images/fish-tail-necklace.webp" alt="Fish Tail Necklace" class="w-25"></td>
-                <td >اسوارة dream catcher</td>
-                <td>1</td>
-                <td>55₪ (شيكل)</td>
-                <td>55₪ (شيكل)</td>
-
-                <td> <button class="btn btn-outline-success">شراء</button>
-                    <button class="btn btn-outline-danger">حذف</button></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Daisy Ring</td>
-                <td><img src="../images/daisy-ring.webp" alt="Daisy Ring" class="w-25 h-25"></td>
-                <td >خاتم Daisy Ring</td>
-                <td>1</td>
-                <td>35₪ (شيكل)</td>
-                <td>35₪ (شيكل)</td>
-
-                <td> <button class="btn btn-outline-success">شراء</button>
-                    <button class="btn btn-outline-danger">حذف</button></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Floral Earrings</td>
-                <td><img src="../images/floral-earrings.webp" alt="Floral Earrings" class="w-25 h-25"></td>
-                <td >قرط اذنين Floral Earrings</td>
-                <td>1</td>
-                <td>40₪ (شيكل)</td>
-                <td>40₪ (شيكل)</td>
-
-                <td> <button class="btn btn-outline-success">شراء</button>
-                    <button class="btn btn-outline-danger">حذف</button></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-               
-                <td>المجموع</td>
-                <td>220₪ (شيكل)</td>
-                <td></td>
-            </tr>
-           </tbody>
-        </table>
+            <div class="mb-3 col-md-8 text-center form-floating">
+                <input type="text" class="form-control" placeholder="Enter phone number" id="Phone"required>
+                <label for="Phone">رقم الجوال</label>
+    
+              </div>
+              <div class="mb-3 col-md-8 text-center form-floating">
+                <input type="text" class="form-control " placeholder="City name" id="City-Name" required>
+                <label for="Last-Name">اسم المدينة</label>
+              </div>
+              <div class="mb-3 col-md-8 text-center form-floating">
+                <input type="text" class="form-control " placeholder="Village Name" id="Village-name" required>
+                <label for="Last-Name">اسم القرية</label>
+              </div>
+              <div class="mb-3 col-md-8 text-center form-floating">
+                <input type="text" class="form-control " placeholder="Street Name" id="Street-Name" required>
+                <label for="Last-Name">اسم الشارع</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+            <button type="button" class="btn btn-success" id="PaymentSuccessBtn" data-bs-dismiss="modal">ارسل الطلب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--toast notification-->
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <div class="toast-container top-25 end-0 p-3">
+    
+     <div class="toast align-items-center text-bg-success border-0  " role="alert" aria-live="assertive" aria-atomic="true" id="OrderSuccessNotif">
+      <div class="d-flex">
+        <!-- <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div> -->
+        <div class="toast-header">
+          <img src="images/logo1.ico" class="rounded me-2" alt="folla-accessories-logo" id="notif-logo">
+          <strong class="me-auto">Order Status</strong>
+          <!-- <small>Folla Accessories</small> -->
+    
+          <small>Just Now</small>
+        </div>
+        <div class="toast-body">
+          <span>تمت اضافة الطلب بنجاح ❤️</span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    
+    </div>
     </div>
     <footer>
         <hr>
@@ -224,5 +285,6 @@
         </div>
        </div>
     </footer>
+    <script src="js/notifications.js"></script>
     </body>
     </html>
