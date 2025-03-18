@@ -10,9 +10,9 @@ checkbox.addEventListener("change",()=>{
         html.setAttribute('data-bs-theme',"dark");
         navbar.setAttribute("class","navbar navbar-expand-lg fixed-top navbar-light bg-dark");
     body.setAttribute("color","#e0e1dd");
-    wishlist.src="./images/wishlist-darkmode.svg"
+    wishlist.src="./images/wishlist-darkmode(1).svg"
     aboutusImg.src="./images/folla5.png"
-        cart.src="./images/cart-darkmode.svg"
+        cart.src="./images/cart-darkmode(1).svg"
         // localStorage.setItem('data-bs-theme','dark')
     }else {
         html.setAttribute("data-bs-theme","light");
