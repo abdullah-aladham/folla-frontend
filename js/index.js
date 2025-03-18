@@ -13,6 +13,7 @@ checkbox.addEventListener("change",()=>{
     wishlist.src="./images/wishlist-darkmode.svg"
     aboutusImg.src="./images/folla5.png"
         cart.src="./images/cart-darkmode.svg"
+        // localStorage.setItem('data-bs-theme','dark')
     }else {
         html.setAttribute("data-bs-theme","light");
         navbar.setAttribute("class","navbar navbar-expand-lg fixed-top navbar-light bg-light");
@@ -20,6 +21,8 @@ checkbox.addEventListener("change",()=>{
         wishlist.src="./images/wishlist.svg"
         aboutusImg.src="./images/folla4.png"
         cart.src="./images/cart.svg"
+        // localStorage.setItem('data-bs-theme','light')
+
 
 
     }
