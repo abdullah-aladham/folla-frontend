@@ -30,6 +30,7 @@ body{
     max-height: 24px;
     cursor: pointer;
 }
+
 #insta{
     border: 1px solid;
     border-radius: 1px;
@@ -108,11 +109,14 @@ padding:5px;
 .about-us{
     margin-bottom: 200px;
     margin-left: 1%;
+ 
+   
 }
 #about-us-title{
     text-align: center;
     font-size: 1.6rem;
     font-weight: bold;
+    
 }
 #about-us-subtitle{
     font-size: 1.4em;
@@ -120,6 +124,19 @@ padding:5px;
 #about-us-p{
 
     font-size:1rem;
+   
+}
+#about-us-paragraph{
+    /* display: block;/* or inline-block */
+     /* text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 2.6em;
+    line-height: 1.8em;
+    line-clamp: 2; * */
+    /* white-space: pre-wrap; */
+    font-family:Montserrat,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
 }
 #about-us-img{
 float: right;
@@ -245,6 +262,30 @@ max-width: 3em;
     color:white;
 } */
 
+@media (max-width:400px) {
+    *{
+        font-size: 15px;
+    }
+    .about-us{
+        font-size:0.9em;
+    }
+    #about-us-img{
+        margin-top: 1px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    #about-us-paragraph{
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 2em;
+        line-height: 1em;
+    }
+    button{
+        font-size:0.9rem;
+    }
+}
 /* @media  (max-width:360px){
 body{
     font-size: 0.8em;

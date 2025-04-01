@@ -228,11 +228,45 @@ transition: transform 0.2s linear;
     max-width: 35px;
     max-height: 35px;
 }
-@media(max-width:500px){
+/* @media(max-width:500px){
     body{
         font-size:0.8em;
     }
+} */
+@media (max-width:500px) {
+    *{
+        font-size: 12px;
+    }
+    .about-us{
+        font-size:0.9em;
+    }
+    #about-us-img{
+        /* margin-top: 1px; */
+        width: 10px;
+        height: 10px;
+    }
+    #about-us-paragraph{
+        /* display: block;/* or inline-block */
+        /* text-overflow: ellipsis; */
+        /* word-wrap: break-word; */
+        /* overflow: hidden; */
+        /* max-height: 2em; */
+        /* line-height: 1em; */
+        font-family:Montserrat,Noto Sans Arabic,Noto Naskh Arabic;
+
+    }
+    button,a{
+        font-size:0.9rem;
+    }
 }
+/* @media (max-width:375px){
+   
+    body{
+        font-size: 9px;
+    }
+    p{font-size: 0.9rem;}
+    h1{font-size:1.1rem}
+} */
     /* @media  (max-width:360px){
     body{
         font-size: 0.8em;
