@@ -38,6 +38,7 @@
               aria-controls="main-menu" 
               aria-expanded="false" 
               aria-label="Toggle navigation"
+              id="nav-btn"
              >
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -46,7 +47,7 @@
               
               <div class="collapse navbar-collapse " id="main-menu">
                 <div class="m-auto d-flex flex-row float-center">
-                  <form class="form-floating"role="search">
+                  <form class="form-floating"role="search" method="get">
                   <div class="input-group">
                   <input class="form-control  " type="search" placeholder="Search" aria-label="Search" id="search-box">
                   <span class="input-group-append">
@@ -109,15 +110,15 @@
         
         <section >
             <!--about us section-->
-            <div class="about-us " id="about-us">
-                <h1 class="text-left" >Folla Accessories</h1>
+            <div class="about-us" id="about-us">
+                <h1 class="text-left" id="brand-title">Folla Accessories</h1>
                     <p id="about-us-subtitle"class="text-left"> Delicacy💯, Chic🥰, Glitter ✨
 
                     </h2>
         <pre class="text-left" id="about-us-paragraph">
-  Discover our unique collection of Chic accessories,
-  to reflect your style and taste in the most beautiful way! 💎 💮❤️</pre>
-                <div class="float-end"><img src="images/folla4.png" alt="folla-accessories-logo" id="about-us-img"class="w-100 h-100"></div>
+  Discover our unique collection of Chic accessories,to reflect 
+  your style and taste in the most beautiful way! 💎 💮❤️</pre>
+                <div id="brand-logo"><img src="images/folla4.png" alt="folla-accessories-logo" id="about-us-img"class="w-100 h-100"></div>
                     <!--  -->
               <div class="text-center float-start">
                 <a class="btn btn-outline-success text-center" href="shop.html" id="shop">Shop now</a>
@@ -184,7 +185,54 @@
         </div>
     </section>
     <section id="Contactus">
-      
+      <h3 class="text-center">Contact us</h3>
+      <form method="post" action="https://api.web3forms.com/submit" enctype="/x-www-form-urlencoded">
+        <input type="hidden" name="access_key" value="c1b94a92-2f34-412a-aefe-bd3f9691823b">
+
+        <div class="row ">
+        <div class="col-md-5">
+      <div class="form-group form-floating">
+        <input type="text" id="Name"class="form-control "  placeholder="Enter Your name" required name="name">
+        <label for="Name">Name</label>
+  
+      </div>
+  </div>
+  <div class="col-md-5">
+      <div class="form-group form-floating">
+        
+        <input type="email" class="form-control " id="Email" placeholder="Enter Your Email"required name="mail">
+        <label for="Email">Email</label>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-5 ">
+      <div class="form-group form-floating ">
+          <input type="text" class="form-control col-sm-2 col-form-label " id="Phone" placeholder="Enter Phone Number" name="phone">
+          <label for="Phone">Phone number</label>
+          <span>Optional</span>
+  
+        </div>
+        </div>
+        <div class="row ">
+        <div class="col-md text-center">
+        <div class="form-group form-floating mb-3">
+          <textarea class="form-control "  rows="3" placeholder="Your text here..." id="Subject" name="subject"></textarea>
+          <label for="Subject" class="form-label">Subject</label>
+  
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Screenshot</label>
+          <input class="form-control" type="file" id="screenshot">
+        </div>
+      </div>
+      </div>
+        </div>
+        <div class="text-center">
+      <button type="submit" class="btn btn-success btn-center">Send</button>
+      <button type="reset"class="btn btn-danger btn-center">Cancel</button>
+      </div>
+    </form>
+    
     </section>
     <section id="floating-items">
     <button type="button" 

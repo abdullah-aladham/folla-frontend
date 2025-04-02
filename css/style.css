@@ -108,10 +108,20 @@ padding:5px;
 }
 .about-us{
     margin-bottom: 200px;
-    margin-left: 1%;
- 
+    /* margin-left: 1%; */
+    background: url('../images/logo.png') no-repeat;
+   
    
 }
+#brand-logo{
+margin: auto;
+width: 35%;
+height: 35%;
+}
+/* #brand-title{
+    color: #ffa5af;
+
+} */
 #about-us-title{
     text-align: center;
     font-size: 1.6rem;
@@ -120,6 +130,8 @@ padding:5px;
 }
 #about-us-subtitle{
     font-size: 1.4em;
+    /* color: #f5eff0; */
+
 }
 #about-us-p{
 
@@ -128,14 +140,16 @@ padding:5px;
 }
 #about-us-paragraph{
     /* display: block;/* or inline-block */
-     /* text-overflow: ellipsis;
+     /* text-overflow:clip;
     word-wrap: break-word;
-    overflow: hidden;
-    max-height: 2.6em;
-    line-height: 1.8em;
-    line-clamp: 2; * */
-    /* white-space: pre-wrap; */
+    overflow:visible;
+    max-height: 4em;
+    line-height: 2em;
+    line-clamp: 3;  */
+    /* /* white-space: pre-wrap; */
     font-family:Montserrat,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+    /* color:white; */
 
 }
 #about-us-img{
@@ -248,6 +262,9 @@ transition: transform 0.2s linear;
     max-width: 35px;
     max-height: 35px;
 }
+#nav-btn{
+    border: none;
+}
 /* #cart-quantity{
 max-width: 3em;
 /* max-height: 3em; */
@@ -262,7 +279,7 @@ max-width: 3em;
     color:white;
 } */
 
-@media (max-width:400px) {
+@media (max-width:750px) {
     *{
         font-size: 15px;
     }
@@ -284,6 +301,64 @@ max-width: 3em;
     }
     button{
         font-size:0.9rem;
+    }
+}
+@media (max-width:400px) {
+    *{
+        font-size: 13px;
+    }
+    .about-us{
+        font-size:0.9em;
+    }
+    #about-us-img{
+        margin-top: 1px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    #about-us-paragraph{
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 2em;
+        line-height: 1em;
+    }
+    button{
+        font-size:0.9rem;
+    }
+    a{
+        font-size:0.7em;
+        width:5rem;
+        height: 4rem;
+    }
+}
+@media (max-width:250px) {
+    *,body{
+        font-size: 9px;
+    }
+    .about-us{
+        font-size:0.9em;
+    }
+    #about-us-img{
+        margin-top: 1px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    #about-us-paragraph{
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 2em;
+        line-height: 1em;
+    }
+    button{
+        font-size:0.9rem;
+    }
+    a{
+        font-size:0.7em;
+        width:5rem;
+        height: 4rem;
     }
 }
 /* @media  (max-width:360px){

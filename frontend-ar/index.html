@@ -38,6 +38,7 @@
               aria-controls="main-menu" 
               aria-expanded="false" 
               aria-label="Toggle navigation"
+              id="nav-btn"
              >
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -146,11 +147,11 @@
         <section >
             <!--about us section-->
             <div class="about-us overflow-auto" id="about-us">
-                <h1 class="text-left" >Folla Accessories\فلَّة</h1>
+                <h1 class="text-left" >Folla Accessories</h1>
                     <span id="about-us-subtitle"class="text-right "> دِقّةَ💯, أَناقة🥰, لَمَعان✨
 
                     </span>
-        <pre class="text-left">اكتشفي مجموعتنا المميزة من الإكسسوارات الأنيقة،
+        <pre class="text-right">اكتشفي مجموعتنا المميزة من الإكسسوارات الأنيقة،
            لتعكس أسلوبك وذوقك بأبهى طريقة! 💎 💮❤️
         </pre>
                 
@@ -163,7 +164,7 @@
         </section>
     </section><!--end of contatiner section-->
     <section>
-    <p  id="Products-title" class="text-sm">تشكيلتنا</p>
+    <h1  id="Products-title">تشكيلتنا</h1>
     <div class="row d-flex flex-sm-column flex-md-row flex-lg-row flex-xl-row mx-auto ">
       <div class="col-md-3 col-sm-2">     
       <div class="card" style="width: 16rem;">
@@ -218,49 +219,56 @@
 </section>
     <section class="contactus">
 <h3 class="text-center">إتصل بنا</h3>
-<div class="container d-flex justify-content-center">
+<div class="container d-flex justify-content-center flex-row-reverse">
   
   
-    <form >
-      <div class="row ">
-      <div class="col-md-5">
-    <div class="form-group form-floating">
-      <input type="text" id="Name"class="form-control "  placeholder="Enter Your name" required>
-      <label for="Name">اسمك</label>
+  <form method="post" action="https://api.web3forms.com/submit" enctype="/x-www-form-urlencoded">
+    <input type="hidden" name="access_key" value="c1b94a92-2f34-412a-aefe-bd3f9691823b">
 
-    </div>
+    <div class="row ">
+    <div class="col-md-5">
+  <div class="form-group form-floating ">
+    <input type="text" id="Name"class="form-control "  placeholder="Enter Your name" required name="name">
+    <label for="Name">الاسم</label>
+
+  </div>
 </div>
 <div class="col-md-5">
-    <div class="form-group form-floating">
-      
-      <input type="email" class="form-control " id="Email" placeholder="Enter Your Email"required>
-      <label for="Email">البريد الالكتروني</label>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-md-5 ">
-    <div class="form-group form-floating ">
-        <input type="text" class="form-control col-sm-2 col-form-label " id="Phone" placeholder="Enter Phone Number"required>
-        <label for="Phone">رقم الهاتف</label>
+  <div class="form-group form-floating">
+    
+    <input type="email" class="form-control " id="Email" placeholder="Enter Your Email"required name="mail">
+    <label for="Email">الايميل</label>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-5 ">
+  <div class="form-group form-floating ">
+      <input type="text" class="form-control col-sm-2 col-form-label " id="Phone" placeholder="Enter Phone Number" name="phone">
+      <label for="Phone">رقم الهاتف</label>
+      <span>اختياري</span>
 
-      </div>
-      </div>
-      <div class="row ">
-      <div class="col-md text-center">
-      <div class="form-group form-floating mb-3">
-        <textarea class="form-control "  rows="3" placeholder="Your text here..." id="Subject"></textarea>
-        <label for="Subject" class="form-label">الموضوع</label>
+    </div>
+    </div>
+    <div class="row ">
+    <div class="col-md text-center">
+    <div class="form-group form-floating mb-3">
+      <textarea class="form-control "  rows="3" placeholder="Your text here..." id="Subject" name="subject"></textarea>
+      <label for="Subject" class="form-label">الموضوع</label>
 
-      </div>
     </div>
+    <div class="mb-3">
+      <label for="formFile" class="form-label">لقطة شاشة(سكرين شوت)</label>
+      <input class="form-control" type="file" id="screenshot">
     </div>
-      </div>
-      <div class="text-center">
-    <button type="submit" class="btn btn-success btn-center">أرسل</button>
-    <button type="reset"class="btn btn-danger btn-center">إلغاء</button>
+  </div>
+  </div>
     </div>
-  </form>
-  
+    <div class="text-center">
+  <button type="submit" class="btn btn-success btn-center">إرسال</button>
+  <button type="reset"class="btn btn-danger btn-center">إلغاء</button>
+  </div>
+</form>
+
 </div>
   </div>
  
