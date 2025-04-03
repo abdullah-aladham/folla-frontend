@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!--website icon -->
     <link rel="icon" type="image/x-icon" href="images/logo1.ico">
+    <script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>
+
 
 <!--font from google-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -222,12 +224,12 @@
 <div class="container d-flex justify-content-center flex-row-reverse">
   
   
-  <form>
+  <form  method="post" action="mailto:folla.acessories24@gmail.com" enctype="multipart/form-data">
     <!-- method="post" action="mailto:folla.acessories24@gmail.com" enctype="multipart/form-data" -->
     <div class="row ">
     <div class="col-md-5">
   <div class="form-group form-floating ">
-    <input type="text" id="Name"class="form-control "  placeholder="Enter Your name" required name="name">
+    <input type="text" id="Name" class="form-control "  placeholder="Enter Your name" required name="name">
     <label for="Name">الاسم</label>
 
   </div>
@@ -263,7 +265,9 @@
     </div>
     <div class="mb-3">
       <label for="formFile" class="form-label">لقطة شاشة(سكرين شوت)</label>
-      <input class="form-control" type="file" id="screenshot">
+      <input class="form-control" type="file" id="screenshot"
+      accept=".jpg,.jpeg,.png,.gif,">
+      <small>only jpg ,jpeg,png,gif types are allowed</small>
     </div>
   </div>
   </div>
@@ -378,6 +382,5 @@
         </footer>
         <script src="js/index.js"></script>
         <!-- <script src="../js/index.js"></script> -->
-
     </body>
 </html>

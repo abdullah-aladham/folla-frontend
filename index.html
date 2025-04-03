@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!--website icon -->
     <link rel="icon" type="image/x-icon" href="images/logo1.ico">
-
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
 <!--font from google-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -227,13 +227,15 @@
       </div>
         <div class="mb-3">
           <label for="formFile" class="form-label">Screenshot</label>
-          <input class="form-control" type="file" id="screenshot">
+          <input class="form-control" type="file" id="screenshot"
+          accept=".jpg,.jpeg,.png,.gif,">
+          <small>only jpg ,jpeg,png,gif types are allowed</small>
         </div>
       </div>
       </div>
         </div>
         <div class="text-center">
-      <button type="submit" class="btn btn-success btn-center">Send</button>
+      <button type="button" class="btn btn-success btn-center" onclick="sendEmail()">Send</button>
       <button type="reset"class="btn btn-danger btn-center">Cancel</button>
       </div>
     </form>
@@ -310,6 +312,15 @@
 
         </footer>
         <script src="js/index.js"></script>
-
+<!-- <script src="js/contactus.js"></script> -->
+ <script>
+const name=document.getElementById("Name");
+const Email=document.getElementById("Email");
+const Phone=document.getElementById("Phone");
+const Subject=document.getElementById("subject");
+const msg=document.getElementById("message1");
+const screenshot =document.getElementById("screenshot");
+ 
+ </script>
     </body>
 </html>
