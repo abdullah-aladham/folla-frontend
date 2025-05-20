@@ -18,7 +18,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jomolhari&family=Mea+Culpa&family=Meow+Script&family=Merienda:wght@300..900&family=Noto+Sans+Arabic:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!--end of google fonts-->
 <!--fontawesome imports-->
 <link rel="stylesheet" href="css/css/all.min.css">
@@ -29,7 +30,7 @@
         
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar" >
             <div class="container ">
-            <a class="navbar-brand" href="index.html" id="logo">Folla Accessories</a>
+            <a class="navbar-brand" href="index.html" id="logo">FOLLA ACCESSORIES</a>
             <button 
               class="navbar-toggler" 
               type="button" 
@@ -51,7 +52,7 @@
                   <div class="input-group">
                   <input class="form-control  " type="search" placeholder="Search" aria-label="Search" id="search-box">
                   <span class="input-group-append">
-                  <button class="btn  m-0" type="submit" id='sbtn' ><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button class="btn  m-0" type="submit" id='sbtn' ><ion-icon name="search-outline"></ion-icon></button>
                   </span>
                 </div>
                 </form>
@@ -91,7 +92,7 @@
                   </li>
                   
                   <li class="nav-item">
-                   <a class="nav-link" href="frontend-ar/index.html">العربية</a>
+                   <a class="nav-link" href="#" title="shut down for fixes">العربية</a>
                   </li>
                   <li><input type="checkbox" class="checkbox" id="checkbox">
                     <label for="checkbox" class="checkbox-label">
@@ -107,84 +108,75 @@
                
             </nav>
     </header>
-        
-        <section >
-            <!--about us section-->
-            <div class="about-us" id="about-us">
-                <h1 class="text-left" id="brand-title">Folla Accessories</h1>
-                    <p id="about-us-subtitle"class="text-left"> Delicacy💯, Chic🥰, Glitter ✨
+        <div class="container-fluid">
+        <main>
+          <div class="ring-image">
+            <img src="images/daisy-ring.webp" alt="daisy-ring" id="main-img1">
+            <h1>Folla Accessories </h1>
+            <h2>Delicacy💯, Chic🥰, Glitter💗</h2>
+            <p>Discover our unique collection of elegant accessories to reflect your style and taste in the most beautiful way! 💎 💮❤️</p>
+            <button class="button btn btn-outline-success" id="shop-btn">shop now</button>
+          </div>
+          <div class="images-container"></div>
+        </main>
+        </div>
+<section id="Products">
+  <div class="container-fluid">
+    <h1 class="text-center">Our Products</h1>
+    <div class="row d-flex flex-sm-column flex-md-row">
+      <div class="col-md-3">
+        <div class="card" style="width: 16rem;">
+  <img src="./images/dream1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">DREAM CATCHER BRACELET</h5>
+    <p class="card-text">DREAM CATCHER BRACELET</p>
+    <a href="#" class="btn btn-outline-success">Add to Cart</a>
+        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
 
-                    </h2>
-        <pre class="text-left" id="about-us-paragraph">
-  Discover our unique collection of Chic accessories,to reflect 
-  your style and taste in the most beautiful way! 💎 💮❤️</pre>
-                <div id="brand-logo"><img src="images/folla4.png" alt="folla-accessories-logo" id="about-us-img"class="w-100 h-100"></div>
-                    <!--  -->
-              <div class="text-center float-start">
-                <a class="btn btn-outline-success text-center" href="shop.html" id="shop">Shop now</a>
-              </div>
-                    
-            </div>
-        </section>
-    </section><!--end of container section-->
-    <section>
-      <h1 class="text-center text-bold">Our Products</h1>
-      <div class="container container-fluid container d-flex justify-content-center">
-        <div class="row d-flex flex-sm-column flex-md-row mx-auto m-auto">
-          <div class="col"><div class="col-md-3">
-            <div class="col-md-3 p-3">
-            <div class="card" style="width: 13rem;">
-              <img src="images/Dream-Catcher-Bracelet.webp" class="card-img-top w-75" alt="Dream-Catcher-Bracelet" >
-              <div class="card-body">
-                <h5 class="card-title">Dream Catcher Bracelet</h5>
-                <p class="card-text">Dream Catcher Bracelet S925</p>
-                <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
-              </div>
-            </div>
-          </div>
-          </div></div>
-          <div class="col"><div class="col-md-3 p-1">
-            <div class="col-md-3">
-            <div class="card" style="width: 13rem;">
-              <img src="images/fish-tail-necklace.webp" class="card-img-top " alt="fish-tail-necklace" >
-              <div class="card-body">
-                <h5 class="card-title">Dream Catcher Bracelet</h5>
-                <p class="card-text">Dream Catcher Bracelet S925</p>
-                <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-          <div class="col"><div class="col-md-3 p-1">
-            <div class="col-md-3">
-            <div class="card" style="width: 13rem;">
-              <img src="images/daisy-ring.webp" class="card-img-top w-75" alt="daisy-ring" >
-              <div class="card-body">
-                <h5 class="card-title">Daisy Ring</h5>
-                <p class="card-text">Dream Catcher Bracelet S925</p>
-                <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
-              </div>
-            </div>
-          </div>
-          </div></div>
-          <div class="col"><div class="col-md-3 p-1">
-            <div class="col-md-3">
-            <div class="card" style="width: 13rem;">
-              <img src="images/floral-earrings.webp" class="card-img-top " alt="floral-earrings" >
-              <div class="card-body">
-                <h5 class="card-title">Dream Catcher Bracelet</h5>
-                <p class="card-text">Dream Catcher Bracelet S925</p>
-                <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
-              </div>
-            </div>
-          </div>
-          </div></div>
-        </div>
-        
-        </div>
-    </section>
-    <section id="Contactus">
+  </div>
+</div>
+  </div>
+      <div class="col-md-3">
+
+        <div class="card" style="width: 16rem;">
+  <img src="./images/fish-tail-necklace (1).webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">FISH TAIL NECKLACE</h5>
+    <p class="card-text">FISH TAIL NECKLACE</p>
+    <a href="#" class="btn btn-outline-success">Add to Cart</a>
+        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+
+  </div>
+</div>
+  </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 16rem;">
+  <img src="./images/daisy-ring.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">DAISY RING</h5>
+    <p class="card-text">DAISY RING</p>
+    <a href="#" class="btn btn-outline-success">Add to cart</a>
+        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+
+  </div>
+</div>
+  </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 16rem;">
+  <img src="./images/floral-earrings (1).png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">FLORAL EARRINGS</h5>
+    <p class="card-text">FLORAL EARRINGS</p>
+    <a href="#" class="btn btn-outline-success">Add to Cart</a>
+        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+  </div>
+</div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<section id="Contactus">
       <h3 class="text-center">Contact us</h3>
       <form >
         <!--  method="post" action="mailto:folla.acessories24@gmail.com" enctype="application/x-www-form-urlencoded" -->
@@ -212,24 +204,21 @@
   
         </div>
         </div>
-        <div class="row ">
-        <div class="col-md text-center">
+        <div class="row">
+        <div class="col-md-7 text-center">
           <div class="form-group form-floating ">
             <input type="text" id="subject"class="form-control "  placeholder="Enter Your name" required name="subject">
             <label for="subject">subject</label>
         
+          </div> 
           </div>
-      <div class="col-md text-center">
+          <div class="row">
+      <div class="col-md-12 text-center">
       <div class="form-group form-floating mb-3">
-        <textarea class="form-control "  rows="3" placeholder="Your text here..." id="message1" name="message"></textarea>
+        <textarea class="form-control "  rows="5" placeholder="Your text here..." id="message1" name="message"></textarea>
         <label for="message" class="form-label">message</label>
   
       </div>
-        <div class="mb-3">
-          <label for="formFile" class="form-label">Screenshot</label>
-          <input class="form-control" type="file" id="screenshot"
-          accept=".jpg,.jpeg,.png,.gif,">
-          <small>only jpg ,jpeg,png,gif types are allowed</small>
         </div>
       </div>
       </div>
@@ -239,16 +228,7 @@
       <button type="reset"class="btn btn-danger btn-center">Cancel</button>
       </div>
     </form>
-    
     </section>
-    <section id="floating-items">
-    <button type="button" 
-  class="btn btn-primary  rounded-pill translate-middle end-10 position-fixed" 
-  id="chat-container"> 
-  <i class="fa-regular fa-message" ></i>
-  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"  data-bs-whatever="@chat-with-us">1 <span class="visually-hidden">unread messages</span></span>
-</button>
-</section>
         <footer>
             <hr>
            <div class="container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">

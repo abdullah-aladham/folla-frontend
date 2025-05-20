@@ -73,9 +73,115 @@ padding:5px;
     border-radius: 5px 0px 0px 5px;
     border-right:none ;
 }
-#search-box:focus{
+/* #search-box:focus{
     width: 25em;
-    }
+    } */
+     main{
+        height: 100%;
+        width: 100%;
+        position: relative;
+     }
+     main .ring-image img{
+        position:absolute;
+        width:150px;
+        right:20%;
+        margin-bottom: 100px;
+     }
+     main h1{
+        margin-left:7%;
+        margin-top: 120px;
+        size: 2.1rem;
+        letter-spacing: 3px;
+        z-index: 100;
+        position: relative;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+        white-space: nowrap;
+        /* color:#ffa5af; */
+     }
+     main h2{
+        margin-left: 7%;
+        /* margin-top:10px ; */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 1.3rem;
+
+     }
+     main p{
+        margin-left: 7%;
+        /* margin-top:170px; */
+        margin-right: 20px;
+        opacity: .7;
+        width: 400px;
+     }
+     main #shop-btn{
+        color:#ffa5af;
+        margin-left:7%;
+        margin-top:6px;
+        padding:8px 10px;
+        font-size:1.2rem;
+        /* text-transform: uppercase; */
+        border-radius: 2px;
+     /* background-color: #ffa5af; */
+color:#ffa5af;
+        border:1px solid ;
+        cursor: pointer;
+        transition: 0.3s ease ;
+        position: relative;
+        overflow: hidden;
+     }
+     main #shop-btn::before{
+        content: '';
+        position: absolute;
+        left:0;
+        top:0;
+        width:0%;
+        height:100%;
+        transition: all .3s;
+        background-color: #ffa5af;
+        z-index: -1;
+        translate: translateX(-100%);
+     }
+     main #shop-btn:hover{
+        background-color:#ffa5af;
+        color:white;
+     }
+
+      main #shop-btn:hover::before{
+        color:#ffa5af;
+        transform:translateX(0);
+        width:100%;
+      }
+      main .ring-image #main-img1{
+        animation: slider 60s linear infinite;
+        /* background-size:cover ;
+        width: 450px ;
+        height: 450px;
+        position: absolute;
+        top: 25%;
+        left:55%;  */
+        /* transform:scale(1); */
+        transition:0.3s;
+      }
+      @keyframes slider {
+        0%{
+            content:url( '../images/daisy-ring.webp');
+        }
+        25%{
+         content:url( '../images/Dream-Catcher-Bracelet.webp');
+  
+        }
+        75%{
+           content: url('../images/fish-tail-necklace (1).webp');
+
+        }        
+        100%{
+            content: url('../images/floral-earrings.webp');
+ 
+        }
+      }
 #sbtn{
         border: 1px solid #ffa5af;
     
@@ -278,7 +384,30 @@ max-width: 3em;
     background-color: #ffa5af;
     color:white;
 } */
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.wish{
+    background-color: white;
+    color:#F564A9;
+    border-color:#F564A9;
+}
+.wish:hover{
+    color:white;
+    background-color: #F564A9;
+        border-color:white;
 
+}
+section ,div ,h1{
+    animation: appear 5 linear;
+}
 @media (max-width:750px) {
     *{
         font-size: 15px;

@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!--website icon -->
     <link rel="icon" type="image/x-icon" href="images/logo1.ico">
-    <script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>
-
-
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
 <!--font from google-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,18 +18,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Jomolhari&family=Mea+Culpa&family=Meow+Script&family=Merienda:wght@300..900&family=Noto+Sans+Arabic:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!--end of google fonts-->
 <!--fontawesome imports-->
 <link rel="stylesheet" href="css/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
-<body  id="body" class="container container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
+<body  id="body" class="container">
  <noscript><h1>You need to enable JavaScript to run the website</h1></noscript>
     <header>
         
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar" >
-            <div class="container container-sm contatiner container-md container-lg container-xl container-xxl">
-            <a class="navbar-brand" href="index.html" id="logo">Folla Accessories</a>
+            <div class="container ">
+            <a class="navbar-brand" href="index.html" id="logo">FOLLA ACCESSORIES</a>
             <button 
               class="navbar-toggler" 
               type="button" 
@@ -49,11 +49,11 @@
               
               <div class="collapse navbar-collapse " id="main-menu">
                 <div class="m-auto d-flex flex-row float-center">
-                  <form class="form-floating"role="search">
+                  <form class="form-floating"role="search" method="get">
                   <div class="input-group">
                   <input class="form-control  " type="search" placeholder="Search" aria-label="Search" id="search-box">
                   <span class="input-group-append">
-                  <button class="btn  m-0" type="submit" id='sbtn' ><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button class="btn  m-0" type="submit" id='sbtn' ><ion-icon name="search-outline"></ion-icon></button>
                   </span>
                 </div>
                 </form>
@@ -61,16 +61,17 @@
 
                 <ul class="navbar-nav ms-10 mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="shop.html">المتجر</a>
+                    <a class="nav-link" href="shop.html">Shop</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="cart.html"> <img src="../images/cart.svg" alt="cart-items" id="cart"></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="wishlist.html"> <img src="../images/wishlist.svg" alt="wishlist" id="wishlist"></a>
+                  <li class="nav-item p-1 ">
+                                       <a class="nav-link" href="wishlist.html"> <img src="../images/wishlist.svg" alt="wishlist" id="wishlist"></a>
+                 
                   </li>
                   
                     
@@ -87,15 +88,13 @@
                       <li><a class="dropdown-item " href="user-membership/login.html"><i class="fa-solid fa-right-to-bracket p-2"></i><span class="p-2">Login</span></a></li>
                       <li><a class="dropdown-item" href="user-membership/signup.html"><i class="fa-solid fa-plus p-2"></i> <span class="p-2">Signup</span></a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../index.html">EN</a>
-                       </li>
-                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="Notifications/Notifications.html"><span class="p-2">Notifications</span><span class="p-2">1</span><i class="fa-solid fa-bell"></i> </a></li>
                     </ul>
                   </li>
                   
-                  
+                  <li class="nav-item">
+                   <a class="nav-link" href="../index.html">EN</a>
+                  </li>
                   <li><input type="checkbox" class="checkbox" id="checkbox">
                     <label for="checkbox" class="checkbox-label">
                       <i class="fas fa-moon"></i>
@@ -110,216 +109,126 @@
                
             </nav>
     </header>
-        <!-- <section >  -->
-            <!-- <section name="main" id="top"> -->
-
-                 <!--carousel section-->
-<!--                  
-                 <div class="container container-fluid container-sm contatiner container-md container-lg container-xl container-xxl">
-                  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" >
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="images/1.webp" class="d-block w-100" alt="delicacy">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/2.webp" class="d-block w-100" alt="Chic">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="images/3.webp" class="d-block w-100" alt="Glitter">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  </div> -->
-             
-            <!-- </section> -->
-<!-- </section> -->
-        <section >
-            <!--about us section-->
-            <div class="about-us overflow-auto" id="about-us">
-                <h1 class="text-left" >Folla Accessories</h1>
-                    <span id="about-us-subtitle"class="text-right "> دِقّةَ💯, أَناقة🥰, لَمَعان✨
-
-                    </span>
-        <pre class="text-right">اكتشفي مجموعتنا المميزة من الإكسسوارات الأنيقة،
-           لتعكس أسلوبك وذوقك بأبهى طريقة! 💎 💮❤️
-        </pre>
-                
-        <div class="float-start"><img src="../images/folla4.png" alt="folla-accessories-logo" id="about-us-img"class="w-100 h-100"></div>
-        <div class="text-center float-end">
-                <a class="btn btn-outline-success text-center" href="shop.html" id="shop">تسوق الان</a>
-              </div>
-                    
-            </div>
-        </section>
-    </section><!--end of contatiner section-->
-    <section>
-    <h1  id="Products-title">تشكيلتنا</h1>
-    <div class="row d-flex flex-sm-column flex-md-row flex-lg-row flex-xl-row mx-auto ">
-      <div class="col-md-3 col-sm-2">     
-      <div class="card" style="width: 16rem;">
-            <img src="images/Dream-Catcher-Bracelet.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Dream Catcher Bracelet</h5>
-              <p class="card-text">Dream Catcher Bracelet S925</p>
-              <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
-            </div>
-            </div>
+        <div class="container-fluid">
+        <main>
+          <div class="ring-image ">
+            <img src="../images/daisy-ring.webp" alt="daisy-ring" id="main-img1">
+            <h1>Folla Accessories </h1>
+            <h2>Delicacy💯, Chic🥰, Glitter💗</h2>
+            <p>Discover our unique collection of elegant accessories to reflect your style and taste in the most beautiful way! 💎 💮❤️</p>
+            <button class="button btn btn-outline-success" id="shop-btn">shop now</button>
+          </div>
+          <div class="images-container"></div>
+        </main>
         </div>
+<section id="Products">
+  <div class="container-fluid">
+    <h1 class="text-center">منتجاتنا</h1>
+    <div class="row d-flex flex-sm-column flex-md-row">
+      <div class="col-md-3">
+        <div class="card" style="width: 16rem;">
+  <img src="../images/dream1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">DREAM CATCHER BRACELET</h5>
+    <p class="card-text">DREAM CATCHER BRACELET</p>
+    <a href="#" class="btn btn-outline-success">Add to Cart</a>
+        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
 
-          
-    <div class="col-md-3 col-sm-2">
-      <div class="card" style="width: 16rem;">
-        <img src="images/fish-tail-necklace.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Fish Tail Necklace</h5>
-          <p class="card-text"> Some text here</p>
-          <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>  Add to Cart</a>
-        </div>
-      </div>
-   </div>
-   <div class="col-md-3 col-sm-2">
-   <div class="card" style="width: 16rem;">
-    <img src="images/floral-earrings.webp" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Floral Earrings</h5>
-      <p class="card-text">From our sweet collection ❤️<br>
-        We present to you this soft and light earring, which is <br>🌼Pink earring 😍
-        And of course it sparkles in the light ❤️<br>       and it is 925 Silver Earrings❤️</p>
-      <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
-      </div>
+  </div>
+</div>
+  </div>
+      <div class="col-md-3">
+
+        <div class="card" style="width: 16rem;">
+  <img src="../images/fish-tail-necklace (1).webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">FISH TAIL NECKLACE</h5>
+    <p class="card-text">FISH TAIL NECKLACE</p>
+    <a href="#" class="btn btn-outline-success">Add to Cart</a>
+        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+
+  </div>
+</div>
+  </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 16rem;">
+  <img src="../images/daisy-ring.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">DAISY RING</h5>
+    <p class="card-text">DAISY RING</p>
+    <a href="#" class="btn btn-outline-success">Add to cart</a>
+        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+
+  </div>
+</div>
+  </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 16rem;">
+  <img src="../images/floral-earrings (1).png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">FLORAL EARRINGS</h5>
+    <p class="card-text">FLORAL EARRINGS</p>
+    <a href="#" class="btn btn-outline-success">Add to Cart</a>
+        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+  </div>
+</div>
+  </div>
     </div>
-  </div>
-<div class="col-md-3 col-sm-2 mx-auto">
-    <div class="card" style="width: 16rem;">
-      
-    <img src="images/daisy-ring.webp" class="card-img-top" alt="..." >
-    <div class="card-body">
-      <h5 class="card-title">Daisy Ring</h5>
-      <p class="card-text">We present to you this beautiful ring<br>from our beautiful collection❤️</p>
-
-      <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>  Add to Cart</a>
-
-    </div>
-  </div>
-  </div>
-  </div>
-      <hr>
   </div>
 </section>
-    <section class="contactus">
-<h3 class="text-center">إتصل بنا</h3>
-<div class="container d-flex justify-content-center flex-row-reverse">
-  
-  
-  <form  method="post" action="mailto:folla.acessories24@gmail.com" enctype="multipart/form-data">
-    <!-- method="post" action="mailto:folla.acessories24@gmail.com" enctype="multipart/form-data" -->
-    <div class="row ">
-    <div class="col-md-5">
-  <div class="form-group form-floating ">
-    <input type="text" id="Name" class="form-control "  placeholder="Enter Your name" required name="name">
-    <label for="Name">الاسم</label>
 
+<section id="Contactus">
+      <h3 class="text-center"> إتصل بنا</h3>
+      <form >
+        <!--  method="post" action="mailto:folla.acessories24@gmail.com" enctype="application/x-www-form-urlencoded" -->
+        <div class="row ">
+        <div class="col-md-5">
+      <div class="form-group form-floating">
+        <input type="text" id="Name"class="form-control "  placeholder="Enter Your name" required name="name" >
+        <label for="Name">Name</label>
+  
+      </div>
   </div>
-</div>
-<div class="col-md-5">
-  <div class="form-group form-floating">
-    
-    <input type="email" class="form-control " id="Email" placeholder="Enter Your Email"required name="mail">
-    <label for="Email">الايميل</label>
-  </div>
-  </div>
-  <div class="row">
-  <div class="col-md-5 ">
-  <div class="form-group form-floating ">
-      <input type="text" class="form-control col-sm-2 col-form-label " id="Phone" placeholder="Enter Phone Number" name="phone">
-      <label for="Phone">رقم الهاتف</label>
-      <span>اختياري</span>
-
-    </div>
-    </div>
-    <div class="row ">
-      <div class="col-md text-center">
-        <div class="form-group form-floating ">
-          <input type="text" id="subject"class="form-control "  placeholder="Enter Your name" required name="subject">
-          <label for="subject">الموضوع</label>
-      
+  <div class="col-md-5">
+      <div class="form-group form-floating">
+        
+        <input type="email" class="form-control " id="Email" placeholder="Enter Your Email"required name="mail">
+        <label for="Email">Email</label>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-md-5 ">
+      <div class="form-group form-floating ">
+          <input type="text" class="form-control col-sm-2 col-form-label " id="Phone" placeholder="Enter Phone Number" name="phone">
+          <label for="Phone">Phone number</label>
+          <span>Optional</span>
+  
         </div>
-    <div class="col-md text-center">
-    <div class="form-group form-floating mb-3">
-      <textarea class="form-control "  rows="3" placeholder="Your text here..." id="message1" name="message"></textarea>
-      <label for="message" class="form-label">الرسالة</label>
-
-    </div>
-    <div class="mb-3">
-      <label for="formFile" class="form-label">لقطة شاشة(سكرين شوت)</label>
-      <input class="form-control" type="file" id="screenshot"
-      accept=".jpg,.jpeg,.png,.gif,">
-      <small>only jpg ,jpeg,png,gif types are allowed</small>
-    </div>
-  </div>
-  </div>
-    </div>
-    <div class="text-center">
-  <button type="submit" class="btn btn-success btn-center">إرسال</button>
-  <button type="reset"class="btn btn-danger btn-center">إلغاء</button>
-  </div>
-</form>
-
-</div>
-  </div>
- 
-  <button type="button" 
-  class="btn btn-primary  rounded-pill translate-middle end-10 position-fixed" 
-  id="chat-container"> 
-  <i class="fa-regular fa-message" ></i>
-  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"  data-bs-whatever="@chat-with-us">1 <span class="visually-hidden">unread messages</span></span>
-</button>
-<div class="modal fade"
-               tab-index="-1" 
-               aria-labelledby="chat-with-us"
-                id="#chat-with-us"
-                aria-hidden="true"
-                >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Chat</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form> <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                      </div>
-                    </form>
-                    </div>
-
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Send message</button>
-              
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+        </div>
+        <div class="row">
+        <div class="col-md-7 text-center">
+          <div class="form-group form-floating ">
+            <input type="text" id="subject"class="form-control "  placeholder="Enter Your name" required name="subject">
+            <label for="subject">subject</label>
+        
+          </div> 
+          </div>
+          <div class="row">
+      <div class="col-md-12 text-center">
+      <div class="form-group form-floating mb-3">
+        <textarea class="form-control "  rows="5" placeholder="Your text here..." id="message1" name="message"></textarea>
+        <label for="message" class="form-label">message</label>
+  
+      </div>
+        </div>
+      </div>
+      </div>
+        </div>
+        <div class="text-center">
+      <button type="button" class="btn btn-success btn-center" onclick="sendEmail()">Send</button>
+      <button type="reset"class="btn btn-danger btn-center">Cancel</button>
+      </div>
+    </form>
     </section>
         <footer>
             <hr>
@@ -329,7 +238,7 @@
                     <h3>Folla Accessories</h3>
                     <p >Delicacy💯, Chic🥰, Glitter💗</p>
                 </div>
-                <div class="col"><h4>روابط سريعة</h4>
+                <div class="col"><h4>Menu</h4>
                 <ul class="list-unstyled">
                     <li><a href="#about-us" id="footer-link">about us</a></li>
                     <li><a href="shop.html"id="footer-link">Products</a></li>
@@ -338,20 +247,20 @@
 
                 </ul>
             </div>
-                <div class="col"><h4>المزيد</h4>
+                <div class="col"><h4>More</h4>
                     <ul class="list-unstyled">
-                        <li><a href="user-membership/login.html"id="footer-link">تسجيل الدخول</a></li>
-                        <li><a href="user-membership/signup.html"id="footer-link">انشاء حساب</a></li>
+                        <li><a href="user-membership/login.html"id="footer-link">Login</a></li>
+                        <li><a href="user-membership/signup.html"id="footer-link">Signup</a></li>
     
     
                     </ul>
                 </div>
-                <div class="col"><h4>تشكيلتنا </h4>
+                <div class="col"><h4>Categories </h4>
                     <ul class="list-unstyled">
-                        <li><a href="#"id="footer-link">أساور</a></li>
-                        <li><a href="#"id="footer-link">خواتم</a></li>
-                        <li><a href="#"id="footer-link">حلق اذنين</a></li>
-                        <li><a href="#"id="footer-link">عقد</a></li>
+                        <li><a href="#"id="footer-link">Bracelet</a></li>
+                        <li><a href="#"id="footer-link">Rings</a></li>
+                        <li><a href="#"id="footer-link">Earrings</a></li>
+                        <li><a href="#"id="footer-link">Necklace</a></li>
     
                     </ul>
                 </div>
@@ -368,19 +277,31 @@
            </div>
            
            <div class="text-lg-center text-md-center text-sm-center">    
-                   <span class="text-center">&#169; جميع الحقوق محفوظة لدى <a  id="footer-link"href="https://www.facebook.com/profile.php?id=100094935185983">Folla Accessories</a></span>
+                   <span class="text-center">&#169; All rights reserved  to <a  id="footer-link"href="https://www.facebook.com/profile.php?id=100094935185983">Folla Accessories</a></span>
  
           </div>
           <div class="text-lg-start text-sm-center">     
-            <span >صمم مع الـ ❤️ بواسطة <a href="https://www.linkedin.com/in/abdullah-aladham/">عبدالله الأدهم</a></span>
+            <span >Done with ❤️ by <a href="https://www.linkedin.com/in/abdullah-aladham/">Abdullah Aladham</a></span>
     </div>
-     <!-- <div class="postion-relative ">  -->
-          <a href="#top" class="btn btn-primary  rounded-pill translate-middle start-1    position-sticky" id="back-to-top"><i class="fa-solid fa-chevron-up"></i></a>
-
-    <!-- </div>  -->
+     <div class="postion-relative ">
+      <div class="position-absolute top-100 start-0 translate-middle">
+        
+       <a href="#top" class="btn btn-primary  rounded-pill " id="back-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+      </div>
+  
+    </div> 
 
         </footer>
         <script src="js/index.js"></script>
-        <!-- <script src="../js/index.js"></script> -->
+<!-- <script src="js/contactus.js"></script> -->
+ <script>
+const name=document.getElementById("Name");
+const Email=document.getElementById("Email");
+const Phone=document.getElementById("Phone");
+const Subject=document.getElementById("subject");
+const msg=document.getElementById("message1");
+const screenshot =document.getElementById("screenshot");
+ 
+ </script>
     </body>
 </html>

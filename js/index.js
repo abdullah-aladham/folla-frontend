@@ -7,6 +7,8 @@ const cart =document.getElementById("cart");//#a47fa6
 const aboutusImg=document.getElementById("about-us-img");
 checkbox.addEventListener("change",()=>{
     if(checkbox.checked){
+         localStorage.setItem('data-bs-theme',"dark");
+         localStorage.setItem(checkbox,checkbox.checked)
         html.setAttribute('data-bs-theme',"dark");
         navbar.setAttribute("class","navbar navbar-expand-lg fixed-top navbar-light bg-dark");
     body.setAttribute("color","#e0e1dd");
@@ -15,6 +17,9 @@ checkbox.addEventListener("change",()=>{
         cart.src="./images/cart-darkmode(1).svg"
         // localStorage.setItem('data-bs-theme','dark')
     }else {
+                 localStorage.setItem('data-bs-theme',"light") 
+         localStorage.setItem(checkbox,!checkbox.checked)
+
         html.setAttribute("data-bs-theme","light");
         navbar.setAttribute("class","navbar navbar-expand-lg fixed-top navbar-light bg-light");
         body.setAttribute("color","dark");
