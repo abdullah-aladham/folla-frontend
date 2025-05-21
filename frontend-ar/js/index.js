@@ -11,14 +11,14 @@ checkbox.addEventListener("change",()=>{
         navbar.setAttribute("class","navbar navbar-expand-lg fixed-top navbar-light bg-dark");
     body.setAttribute("color","#e0e1dd");
     wishlist.src="../images/wishlist-darkmode(1).svg"
-    aboutusImg.src="../images/folla5.png"
+    // aboutusImg.src="../images/folla5.png"
         cart.src="../images/cart-darkmode(1).svg"
     }else {
         html.setAttribute("data-bs-theme","light");
         navbar.setAttribute("class","navbar navbar-expand-lg fixed-top navbar-light bg-light");
         body.setAttribute("color","dark");
         wishlist.src="../images/wishlist.svg"
-        aboutusImg.src="../images/folla4.png"
+        // aboutusImg.src="../images/folla4.png"
         cart.src="../images/cart.svg"
 
 

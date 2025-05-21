@@ -477,8 +477,8 @@ section ,div ,h1{
      main h1{
         margin-left:3%;
         margin-top: 90px;
-        size: 0.6rem;
-        letter-spacing: 3px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
         z-index: 100;
         position: relative;
         font-weight: 600;
@@ -487,28 +487,28 @@ section ,div ,h1{
         white-space: nowrap;
     }
      main h2{
-        margin-left: 3%;
+        margin-right: 3%;
         /* margin-top:10px ; */
         text-transform: uppercase;
         letter-spacing: 1.3px;
         font-weight: 400;
-        font-size: 0.6rem;
+        font-size: 1rem;
 
      }
 
     main .ring-image img{
         position:absolute;
-        width:120px;
-        right:1%;
+        width:70px;
+    left:70%;
         margin-bottom: 100px;
      }
     main p{
-         margin-left: 5%;
+         margin-right: 3%;
         /* margin-top:170px; */
-        margin-right: 15px;
+        /* margin-right: 15px; */
         opacity: .7;
-        width: 350px;
-        font-size: 0.8rem;
+        width: 180px;
+        font-size: 1.1rem;
     }
     button,a{
         font-size:0.9rem;
