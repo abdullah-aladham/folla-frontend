@@ -123,59 +123,67 @@
 <section id="Products">
   <div class="container-fluid">
     <h1 class="text-center">Our Products</h1>
-    <div class="row d-flex flex-sm-column flex-md-row mx-auto">
-      <div class="col-md-3 mx-auto">
-        <div class="card" style="width: 16rem;">
+    <div
+     class="row d-flex flex-md-row flex-sm-column flex-xs-column mx-auto justify-content-center" >
+      <div class="col-md-3 ">
+        <div class="card" >
   <img src="./images/dream1.png" class="card-img-top" alt="dream-catcher-bracelet">
   <div class="card-body">
     <h5 class="card-title">Dream Bracelet</h5>
     <p class="card-text">Dream Catcher Bracelet</p>
     <a href="#" class="btn btn-outline-success">Add to Cart</a>
-        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+        <button href="#" class="btn btn-success wish float-end" id="add-to-wish-btn"><ion-icon name="heart-outline"></ion-icon></button>
 
   </div>
 </div>
   </div>
-      <div class="col-md-3">
+      <div class="col-md-3 m-auto">
 
-        <div class="card" style="width: 16rem;">
+        <div class="card" >
   <img src="./images/fish-tail-necklace (1).webp" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">FISH TAIL NECKLACE</h5>
     <p class="card-text">FISH TAIL NECKLACE</p>
     <a href="#" class="btn btn-outline-success">Add to Cart</a>
-        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+        <button href="#" class="btn btn-success wish float-end" id="add-to-wish-btn"><ion-icon name="heart-outline"></ion-icon></button>
 
   </div>
 </div>
   </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 16rem;">
+      <div class="col-md-3 m-auto">
+        <div class="card" >
   <img src="./images/daisy-ring.webp" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">DAISY RING</h5>
     <p class="card-text">DAISY RING</p>
     <a href="#" class="btn btn-outline-success">Add to cart</a>
-        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+        <button  class="btn btn-success wish float-end" id="add-to-wish-btn"><ion-icon name="heart-outline"></ion-icon></button>
 
   </div>
 </div>
   </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 16rem;">
+      <div class="col-md-3 mx-auto">
+        <div class="card" >
   <img src="./images/floral-earrings (1).png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">FLORAL EARRINGS</h5>
     <p class="card-text">FLORAL EARRINGS</p>
     <a href="#" class="btn btn-outline-success">Add to Cart</a>
-        <a href="#" class="btn btn-success wish float-end" class="add-to-wish"><ion-icon name="heart-outline"></ion-icon></a>
+        <button  class="btn btn-success wish float-end" id="add-to-wish-btn"><ion-icon name="heart-outline"></ion-icon></button>
   </div>
 </div>
   </div>
     </div>
   </div>
 </section>
-
+<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="addtowish">
+  <div class="d-flex">
+    <div class="toast-body">
+    Added to wish List
+    </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
 <section id="Contactus">
       <h3 class="text-center">Contact us</h3>
       <form >

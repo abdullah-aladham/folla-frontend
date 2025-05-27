@@ -167,6 +167,9 @@ color:#ffa5af;
  
         }
       }
+      .card {
+        width: 16rem;
+      }
 /* #navbar-ar li{
 padding:5px;
 
@@ -358,7 +361,7 @@ transition: transform 0.2s linear;
  .wish:hover:active {
     color: white;
     background-color: #F564A9;
-    border-color: white;
+    border-color: #F564A9;
 
 }
 /* .wish:focus{

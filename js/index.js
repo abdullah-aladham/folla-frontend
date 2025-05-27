@@ -6,6 +6,8 @@ const wishlist=document.getElementById("wishlist");
 const cart =document.getElementById("cart");//#a47fa6
 const aboutusImg=document.getElementById("about-us-img");
 const btn=document.getElementsByClassName("button");
+const wishbtn=document.getElementById("add-to-wish-btn");
+const wishToast=document.getElementById("addtowish");
 checkbox.addEventListener("change",()=>{
     if(checkbox.checked){
         //  localStorage.setItem('data-bs-theme',"dark");
@@ -36,3 +38,10 @@ checkbox.addEventListener("change",()=>{
 
     }
 })
+
+if(wishbtn){
+    const toastBootstrap=bootstrap.Toast.getOrCreateInstance(wishToast);
+    wishbtn.addEventListener('click',()=>{
+        toastBootstrap.show();
+    })
+}

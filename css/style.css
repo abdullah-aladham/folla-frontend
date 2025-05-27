@@ -15,6 +15,9 @@ body{
     font-family:Montserrat,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+.ar{
+    direction: rtl;
+}
 #cart{
     max-width: 24px;
     max-height: 24px;
@@ -258,6 +261,9 @@ height: 35%;
     /* color:white; */
 
 }
+.card{
+    width: 16rem;
+}
 #about-us-img{
 float: right;
 max-width:65% ;
@@ -405,12 +411,20 @@ max-width: 3em;
         border-color:white;
 
 }
+.wish:hover:active{
+    color:white;
+    background-color: #F564A9;
+    border-color: #F564A9;
+    
+}
+
 section ,div ,h1{
     animation: appear 5 linear;
 }
-@media (max-width:750px) {
+ 
+@media (max-width:950px) {
     *{
-        font-size: 15px;
+        font-size: 17px;
     }
     .about-us{
         font-size:0.9em;
@@ -466,10 +480,148 @@ section ,div ,h1{
     button{
         font-size:0.9rem;
     }
+    row{
+        padding: 10em;
+    }
+    .card{
+        width: 12.5rem;
+    }
+   
+    
 }
-@media (max-width:400px) {
+
+@media (max-width:850px) {
     *{
         font-size: 13px;
+    }
+    .about-us{
+        font-size:0.9em;
+    }
+    #about-us-img{
+        margin-top: 1px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    main h1{
+        margin-left:5%;
+        margin-top: 100px;
+        size: 0.6rem;
+        letter-spacing: 3px;
+        z-index: 100;
+        position: relative;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+        white-space: nowrap;
+    }
+         main h2{
+        margin-left: 5%;
+        /* margin-top:10px ; */
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-size: 1rem;
+
+     }
+
+    main p{
+         margin-left: 5%;
+        /* margin-top:170px; */
+        margin-right: 15px;
+        opacity: .7;
+        width: 350px;
+    }
+    main .ring-image img{
+        position:absolute;
+        width:120px;
+        right:6%;
+        margin-bottom: 100px;
+     }
+    #about-us-paragraph{
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 2em;
+        line-height: 1em;
+    }
+    button{
+        font-size:0.9rem;
+    }
+    /* row{
+        padding: 10em;
+    } */
+    .card{
+        width: 12.5rem;
+    }
+    
+}
+@media (max-width:750px) {
+    *{
+        font-size: 12px;
+    }
+    .about-us{
+        font-size:0.9em;
+    }
+    #about-us-img{
+        margin-top: 1px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    main h1{
+        margin-left:5%;
+        margin-top: 100px;
+        size: 0.6rem;
+        letter-spacing: 3px;
+        z-index: 100;
+        position: relative;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+        white-space: nowrap;
+    }
+         main h2{
+        margin-left: 5%;
+        /* margin-top:10px ; */
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-size: 1rem;
+
+     }
+
+    main p{
+         margin-left: 5%;
+        /* margin-top:170px; */
+        margin-right: 15px;
+        opacity: .7;
+        width: 350px;
+    }
+    main .ring-image img{
+        position:absolute;
+        width:120px;
+        right:6%;
+        margin-bottom: 100px;
+     }
+    #about-us-paragraph{
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 2em;
+        line-height: 1em;
+    }
+    button{
+        font-size:0.9rem;
+    }
+     .card{
+        width: 12.5rem;
+    }
+    
+}
+@media (max-width:550px) {
+    *{
+        font-size: 14px;
     }
     main{
         font-size:0.9em;
@@ -498,7 +650,8 @@ section ,div ,h1{
 
     main .ring-image img{
         position:absolute;
-        width:70px;
+        width:9em;
+        height :9em;
     left:70%;
         margin-bottom: 100px;
      }
@@ -518,6 +671,66 @@ section ,div ,h1{
         font-size:0.7em;
         width:5rem;
         height: 4rem;
+    }
+    .card-img{
+        width :1em;
+    }
+}
+@media (max-width:400px) {
+    *{
+        font-size: 1px;
+    }
+    main{
+        font-size:0.9em;
+    }
+     main h1{
+        margin-left:3%;
+        margin-top: 90px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        z-index: 100;
+        position: relative;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+        white-space: nowrap;
+    }
+     main h2{
+        margin-right: 3%;
+        /* margin-top:10px ; */
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        font-weight: 400;
+        font-size: 1rem;
+
+     }
+
+    main .ring-image img{
+        position:absolute;
+        width:9em;
+        height :9em;
+    left:70%;
+        margin-bottom: 100px;
+     }
+    main p{
+         margin-right: 3%;
+        /* margin-top:170px; */
+        /* margin-right: 15px; */
+        opacity: .7;
+        width: 180px;
+        font-size: 1.1rem;
+    }
+    button,a{
+        font-size:0.9rem;
+         /* width:1.1em;  */
+    }
+    a{
+        font-size:0.7em;
+        width:5rem;
+        height: 4rem;
+    }
+    .card-img{
+        width :1em;
     }
 }
 @media (max-width:250px) {
