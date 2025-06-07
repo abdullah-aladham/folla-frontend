@@ -493,6 +493,12 @@ transition: transform 0.2s linear;
      .card{
         width:8rem;
     }
+    .row .card,#contact{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+    }
 }
 @media (max-width:250px) {
     *,body{
@@ -548,6 +554,12 @@ transition: transform 0.2s linear;
     }
      .card{
         width:5rem;
+    }
+    .row .card,#contact{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
     }
 }
 /* @media (max-width:375px){
