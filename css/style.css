@@ -90,6 +90,10 @@ padding:5px;
         right:20%;
         margin-bottom: 100px;
      }
+     .ring-image{
+        max-width: 300px;
+        height: 300px;
+     }
      main h1{
         margin-left:7%;
         margin-top: 120px;
@@ -185,6 +189,23 @@ color:#ffa5af;
  
         }
       }
+      /* .review-card .review-img{
+        height: auto;
+        max-width: 100%;
+      } */
+       .review-card{
+        position: relative;
+       }
+       
+       .review{
+        position: absolute;
+        top:40%;
+       left: 10%;
+        /* right: auto; */
+       }
+ /* #products .conatiner{
+    margin:auto;
+ } */
 #sbtn{
         border: 1px solid #ffa5af;
     
@@ -422,18 +443,18 @@ section ,div ,h1{
     animation: appear 5 linear;
 }
  
-@media (max-width:950px) {
+@media (max-width:999px) {
     *{
-        font-size: 17px;
+        font-size: 16px;
     }
-    .about-us{
-        font-size:0.9em;
+    /* .about-us{
+        font-size:1.9rem;
     }
     #about-us-img{
         margin-top: 1px;
         max-width: 120px;
-        max-height: 120px;
-    }
+        max-height: 10rem;
+    } */
     main h1{
         margin-left:5%;
         margin-top: 100px;
@@ -463,9 +484,14 @@ section ,div ,h1{
         opacity: .7;
         width: 350px;
     }
+    .ring-image{
+        width: 200px;
+        /* height: 300px; */
+    }
     main .ring-image img{
         position:absolute;
-        width:120px;
+        width: 500px;
+        height:200px;
         right:6%;
         margin-bottom: 100px;
      }
@@ -480,13 +506,48 @@ section ,div ,h1{
     button{
         font-size:0.9rem;
     }
-    row{
+    /* row{
         padding: 10em;
+    } */
+   .row .card{
+        /* margin:auto; */
+        max-width: 11rem;
+       
     }
-    .card{
-        width: 12.5rem;
+    .row p{
+        font-size: 1.5rem;
     }
-   
+    .row a{
+       width: 70%;
+       padding:5%;
+       font-size: 1rem;
+    }
+    #contact{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  
+    }
+    #contact label{
+        font-size: 1.2rem;
+    }
+ 
+     .review-card{
+        position: relative;
+        width: 60%;
+        right: 5%;
+       }
+       
+       .review{
+        position: absolute;
+        top:40%;
+       left: 30%;
+       width:60%
+       /* right: 90%; */
+        /* right: auto; */
+       }
+       
     
 }
 
@@ -555,6 +616,20 @@ section ,div ,h1{
         width: 12.5rem;
     }
     
+     .review-card{
+        position: relative;
+        width: 60%;
+        right: 5%;
+       }
+       
+       .review{
+        position: absolute;
+        top:40%;
+       left: 30%;
+       width:60%
+       /* right: 90%; */
+        /* right: auto; */
+       }
 }
 @media (max-width:750px) {
     *{
@@ -617,6 +692,20 @@ section ,div ,h1{
      .card{
         width: 12.5rem;
     }
+     .review-card{
+        position: relative;
+        width: 60%;
+        right: 5%;
+       }
+       
+       .review{
+        position: absolute;
+        top:40%;
+       left: 30%;
+       width:60%
+       /* right: 90%; */
+        /* right: auto; */
+       }
     
 }
 @media (max-width:550px) {
@@ -681,6 +770,28 @@ section ,div ,h1{
   margin-right: auto;
   width: 70%;
     }
+    .review-card{
+        position: relative;
+        width: 60%;
+        right: 23%;
+        
+       }
+       .review-card .review-img{
+        width: 350px;
+       }
+       
+       .review{
+        position: absolute;
+        top:28%;
+       left: 50%;
+       width:60%
+       
+       /* right: 90%; */
+        /* right: auto; */
+       }
+       .review strong,.review p{
+        font-size:0.85rem ;
+       }
 }
 @media (max-width:400px) {
     *{
@@ -744,6 +855,28 @@ section ,div ,h1{
   margin-right: auto;
   width: 70%;
     }
+  .review-card{
+        position: relative;
+        width: 60%;
+        right: 28%;
+        
+       }
+       .review-card .review-img{
+        width: 350px;
+       }
+       
+       .review{
+        position: absolute;
+        top:28%;
+       left: 50%;
+       width:60%
+       
+       /* right: 90%; */
+        /* right: auto; */
+       }
+       .review strong,.review p{
+        font-size:1.05rem ;
+       }
 }
 @media (max-width:250px) {
     *,body{
@@ -804,6 +937,28 @@ section ,div ,h1{
     margin-right: auto; */
   width: 80%;
     }
+    .review-card{
+        position: relative;
+        width: 60%;
+        right: 28%;
+        
+       }
+       .review-card .review-img{
+        width: 120px;
+       }
+       
+       .review{
+        position: absolute;
+        top:28%;
+       left: 50%;
+       width:60%
+       
+       /* right: 90%; */
+        /* right: auto; */
+       }
+       .review strong,.review p{
+        font-size:0.6rem ;
+       }
 }
 /* @media  (max-width:360px){
 body{
