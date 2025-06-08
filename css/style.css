@@ -490,8 +490,8 @@ section ,div ,h1{
     }
     main .ring-image img{
         position:absolute;
-        width: 500px;
-        height:200px;
+        width: 150px;
+        height:150px;
         right:6%;
         margin-bottom: 100px;
      }
@@ -631,7 +631,7 @@ section ,div ,h1{
         /* right: auto; */
        }
 }
-@media (max-width:750px) {
+@media (max-width:768px) {
     *{
         font-size: 12px;
     }
@@ -692,21 +692,36 @@ section ,div ,h1{
      .card{
         width: 12.5rem;
     }
-     .review-card{
+     .row .card,#contact{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+    }
+    .review-card{
         position: relative;
         width: 60%;
-        right: 5%;
+        /* right: 28%; */
+         margin-left: auto;
+  margin-right: auto;
+        
+       }
+       .review-card .review-img{
+        width: 350px;
        }
        
        .review{
         position: absolute;
-        top:40%;
-       left: 30%;
+        top:28%;
+       left: 50%;
        width:60%
+       
        /* right: 90%; */
         /* right: auto; */
        }
-    
+       .review strong,.review p{
+        font-size:1.05rem ;
+       }
 }
 @media (max-width:550px) {
     *{
@@ -770,10 +785,12 @@ section ,div ,h1{
   margin-right: auto;
   width: 70%;
     }
-    .review-card{
+   .review-card{
         position: relative;
         width: 60%;
-        right: 23%;
+        right: 28%;
+         margin-left: auto;
+  margin-right: auto;
         
        }
        .review-card .review-img{
@@ -855,10 +872,12 @@ section ,div ,h1{
   margin-right: auto;
   width: 70%;
     }
-  .review-card{
+ .review-card{
         position: relative;
         width: 60%;
-        right: 28%;
+        /* right: 28%; */
+         margin-left: auto;
+  margin-right: auto;
         
        }
        .review-card .review-img{
@@ -937,10 +956,12 @@ section ,div ,h1{
     margin-right: auto; */
   width: 80%;
     }
-    .review-card{
+   .review-card{
         position: relative;
         width: 60%;
-        right: 28%;
+        /* right: 28%; */
+         margin-left: auto;
+  margin-right: auto;
         
        }
        .review-card .review-img{
