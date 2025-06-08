@@ -170,6 +170,19 @@ color:#ffa5af;
       .card {
         width: 16rem;
       }
+
+
+       .review-card{
+        position: relative;
+
+       }
+       
+       .review{
+        position: absolute;
+        top:40%;
+       right: 10%;
+        /* right: auto; */
+       }
 /* #navbar-ar li{
 padding:5px;
 
@@ -369,8 +382,194 @@ transition: transform 0.2s linear;
     background-color: #F564A9;
 }
 } */
+@media (max-width:999px) {
+    *{
+        font-size: 16px;
+    }
+    /* .about-us{
+        font-size:1.9rem;
+    }
+    #about-us-img{
+        margin-top: 1px;
+        max-width: 120px;
+        max-height: 10rem;
+    } */
+    main h1{
+        margin-left:5%;
+        margin-top: 100px;
+        size: 0.6rem;
+        letter-spacing: 3px;
+        z-index: 100;
+        position: relative;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+        white-space: nowrap;
+    }
+         main h2{
+        margin-left: 5%;
+        /* margin-top:10px ; */
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-size: 1rem;
 
-@media (max-width:750px) {
+     }
+
+    main p{
+         margin-left: 5%;
+        /* margin-top:170px; */
+        margin-right: 15px;
+        opacity: .7;
+        width: 350px;
+    }
+    .ring-image{
+        width: 200px;
+        /* height: 300px; */
+    }
+    main .ring-image img{
+        position:absolute;
+        width: 150px;
+        height:150px;
+        right:6%;
+        margin-bottom: 100px;
+     }
+    #about-us-paragraph{
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 2em;
+        line-height: 1em;
+    }
+    button{
+        font-size:0.9rem;
+    }
+    /* row{
+        padding: 10em;
+    } */
+   .row .card{
+        /* margin:auto; */
+        max-width: 11rem;
+       
+    }
+    .row p{
+        font-size: 1.5rem;
+    }
+    .row a{
+       width: 70%;
+       padding:5%;
+       font-size: 1rem;
+    }
+    #contact{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  
+    }
+    #contact label{
+        font-size: 1.2rem;
+    }
+ 
+     .review-card{
+        position: relative;
+        width: 60%;
+        right: 5%;
+       }
+       
+       .review{
+        position: absolute;
+        top:40%;
+       left: 30%;
+       width:60%
+       /* right: 90%; */
+        /* right: auto; */
+       }
+       
+    
+}
+@media (max-width:850px) {
+    *{
+        font-size: 13px;
+    }
+    .about-us{
+        font-size:0.9em;
+    }
+    #about-us-img{
+        margin-top: 1px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    main h1{
+        margin-left:5%;
+        margin-top: 100px;
+        size: 0.6rem;
+        letter-spacing: 3px;
+        z-index: 100;
+        position: relative;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+        white-space: nowrap;
+    }
+         main h2{
+        margin-left: 5%;
+        /* margin-top:10px ; */
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-size: 1rem;
+
+     }
+
+    main p{
+         margin-left: 5%;
+        /* margin-top:170px; */
+        margin-right: 15px;
+        opacity: .7;
+        width: 350px;
+    }
+    main .ring-image img{
+        position:absolute;
+        width:120px;
+        right:6%;
+        margin-bottom: 100px;
+     }
+    #about-us-paragraph{
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 2em;
+        line-height: 1em;
+    }
+    button{
+        font-size:0.9rem;
+    }
+    /* row{
+        padding: 10em;
+    } */
+    .card{
+        width: 12.5rem;
+    }
+    
+     .review-card{
+        position: relative;
+        width: 60%;
+        right: 5%;
+       }
+       
+       .review{
+        position: absolute;
+        top:40%;
+       left: 30%;
+       width:60%
+       /* right: 90%; */
+        /* right: auto; */
+       }
+}
+@media (max-width:768px) {
     *{
         font-size: 15px;
     }
@@ -437,6 +636,30 @@ transition: transform 0.2s linear;
     .card{
         width:13rem;
     }
+    .review-card{
+        position: relative;
+        width: 60%;
+        /* right: 28%; */
+         margin-left: auto;
+  margin-right: auto;
+        
+       }
+       .review-card .review-img{
+        width: 350px;
+       }
+       
+       .review{
+        position: absolute;
+        top:28%;
+       left: 50%;
+       width:60%
+       
+       /* right: 90%; */
+        /* right: auto; */
+       }
+       .review strong,.review p{
+        font-size:1.05rem ;
+       }
 }
 @media (max-width:500px) {
     *{
@@ -499,7 +722,119 @@ transition: transform 0.2s linear;
   margin-right: auto;
   width: 70%;
     }
+     .review-card{
+        position: relative;
+        width: 60%;
+        right: 28%;
+         margin-left: auto;
+  margin-right: auto;
+        
+       }
+       .review-card .review-img{
+        width: 350px;
+       }
+       
+       .review{
+        position: absolute;
+        top:28%;
+       left: 50%;
+       width:60%
+       
+       /* right: 90%; */
+        /* right: auto; */
+       }
+       .review strong,.review p{
+        font-size:0.85rem ;
+       }
 }
+@media (max-width:400px) {
+    *{
+        font-size: 11px;
+    }
+    main{
+        font-size:0.9em;
+    }
+     main h1{
+        margin-left:3%;
+        margin-top: 90px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        z-index: 100;
+        position: relative;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+        white-space: nowrap;
+    }
+     main h2{
+        margin-right: 3%;
+        /* margin-top:10px ; */
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        font-weight: 400;
+        font-size: 1rem;
+
+     }
+
+    main .ring-image img{
+        position:absolute;
+        width:9em;
+        height :9em;
+    left:70%;
+        margin-bottom: 100px;
+     }
+    main p{
+         margin-right: 3%;
+        /* margin-top:170px; */
+        /* margin-right: 15px; */
+        opacity: .7;
+        width: 150px;
+        font-size: 1.1rem;
+    }
+    button,a{
+        font-size:0.9rem;
+         /* width:1.1em;  */
+    }
+    a{
+        font-size:0.7em;
+        width:5rem;
+        height: 4rem;
+    }
+    .card-img{
+        width :1em;
+    }
+    .row .card,#contact{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+    }
+ .review-card{
+        position: relative;
+        width: 60%;
+        /* right: 28%; */
+         margin-left: auto;
+  margin-right: auto;
+        
+       }
+       .review-card .review-img{
+        width: 350px;
+       }
+       
+       .review{
+        position: absolute;
+        top:28%;
+       left: 50%;
+       width:60%
+       
+       /* right: 90%; */
+        /* right: auto; */
+       }
+       .review strong,.review p{
+        font-size:1.05rem ;
+       }
+}
+
 @media (max-width:250px) {
     *,body{
         font-size: 9px;
@@ -561,161 +896,28 @@ transition: transform 0.2s linear;
   margin-right: auto;
   width: 70%;
     }
-}
-/* @media (max-width:375px){
-   
-    body{
-        font-size: 9px;
-    }
-    p{font-size: 0.9rem;}
-    h1{font-size:1.1rem}
-} */
-    /* @media  (max-width:360px){
-    body{
-        font-size: 0.8em;
-        margin-top: 0.7em;}
-    #logo{
-        font-size:1.2em;
-    
-    }
-    #navbar{
-        position: fixed;
-      
-       
-    }
-    #toggler{
+     .review-card{
         position: relative;
-        left:19%;
-        top:19%;
-        bottom:10%
-    }
-    #Products-title{
-        font-size: 1.2rem;
-    }
-    #about-us-title{
-        font-size:1.2rem;
-    }
-    #about-us-subtitle{
-        font-size: 0.9rem;
-    }
-    #about-us-p{
-        font-size:1.1em;
-    }
-    #about-us-img{
-        float: right;
-        width:45% ;
-    margin-top: 0.8rem;
-    }
-    #shop{
-       font-size:0.9em
-    }
-} */
-
- /* @media (max-width: 770px) {
-   body,#about-us-title ,#Products-title {
-      /* padding: calc(1.325rem ); */
-      /* font-size: 1.1em; */
-      /* font-size: 0.06rem; */
-       /* 1.125rem is small enough, so RFS won't rescale this */
-     /* }
-     #about-us-subtitle {
-        font-size:1em;
-     }
-     #about-us-p{
-        font-size: 0.85em;
-     } */
-    
-  /* }  */
-  /* @media (max-width: 650px) {
-    body,#about-us-title,#Products-title {
-       padding: calc(1.325rem ); */
-       /* font-size: 1em; */
-       /* font-size: 0.06rem; */
-        /* 1.125rem is small enough, so RFS won't rescale this */
-      /* }
-      #about-us-subtitle {
-         font-size:1.1em;
-      }
-      #about-us-p{
-         font-size: 0.95em;
-      } */
-     
-   /* }  */
-   /* @media (max-width: 550px) {
-    body,#about-us-title,#Products-title { */
-       /* padding: calc(1.325rem ); */
-       /* font-size: 1em; */
-       /* font-size: 0.06rem; */
-        /* 1.125rem is small enough, so RFS won't rescale this */
-      /* }
-      #about-us-subtitle {
-         font-size:1.1em;
-      }
-      #about-us-p{
-         font-size: 0.95em;
-      } */
-     
-   /* }  */
-   /* @media (max-width: 500px) {
-    body,#about-us-title,#Products-title { */
-       /* padding: calc(1.325rem ); */
-       /* font-size: 1em; */
-       /* font-size: 0.06rem; */
-        /* 1.125rem is small enough, so RFS won't rescale this */
-      /* }
-      #about-us-subtitle {
-         font-size:1.1em;
-      }
-      #about-us-p{
-         font-size: 0.95em;
-      }
-      */
-   /* }  */
-   /* @media (max-width: 490px) {
-    body,#about-us-title,#Products-title { */
-       /* padding: calc(1.325rem ); */
-       /* font-size: 1em; */
-       /* font-size: 0.06rem; */
-        /* 1.125rem is small enough, so RFS won't rescale this */
-      /* }
-      #about-us-subtitle {
-         font-size:1.1em;
-      }
-      #about-us-p{
-         font-size: 0.95em;
-      } */
-     
-   /* }  */
-   /* @media (max-width: 450px) {
-    body,#about-us-title,#Products-title {
-       font-size: 1em;
+        width: 60%;
+        /* right: 28%; */
+         margin-left: auto;
+  margin-right: auto;
+        
+       }
+       .review-card .review-img{
+        width: 120px;
+       }
        
-      }
-      #about-us-subtitle {
-         font-size:1.1em;
-      }
-      #about-us-p{
-         font-size: 0.95em;
-      } */
-     
-   /* }  */
-   /* @media (max-width: 400px) {
-    body,#about-us-title,#Products-title {
-       /* padding: calc(1.325rem ); */
-       /* font-size: 1em; */
-    /* }
-      #about-us-subtitle {
-         font-size:1.1em;
-      }
-      #about-us-p{
-         font-size: 0.95em;
-      } */
-     
-   /* }  */ 
-   /* @media (max-width: 660px) { */
-    /* * { */
-      /* padding: calc(1.325rem + 0.9vw); */
-      /* font-size: 1.6rem;  */
-      /* 1.125rem is small enough, so RFS won't rescale this */
-    /* } */
-  /* }*/
+       .review{
+        position: absolute;
+        top:28%;
+       left: 50%;
+       width:60%
+       
+       /* right: 90%; */
+        /* right: auto; */
+       }
+       .review strong,.review p{
+        font-size:0.6rem ;
+       }
+}
