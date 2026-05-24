@@ -26,7 +26,7 @@
 </head>
 <body  id="body" class="container">
  <noscript><h1>You need to enable JavaScript to run the website</h1></noscript>
-    <header>
+     <header>
         
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar" >
             <div class="container ">
@@ -107,11 +107,11 @@
             </div>
                
             </nav>
-    </header>
-        <div class="container-fluid">
+    </header> 
+        <div class="container-fluid" id="main-section" >
         <main>
           <div class="ring-image">
-            <img src="images/daisy-ring.webp" alt="daisy-ring" id="main-img1">
+            <img src="./images/folla-colored.jpg" alt="daisy-ring" id="main-img1">
             <h1>Folla Accessories </h1>
             <h2>Delicacy💯, Chic🥰, Glitter💗</h2>
             <p>Discover our unique collection of elegant accessories to reflect your style and taste in the most beautiful way! 💎 💮❤️</p>
@@ -120,9 +120,19 @@
           <div class="images-container"></div>
         </main>
         </div>
+        <section id="about-us">
+
+          <div class="container">
+<h1 class="text-left">About Us</h1>
+<div class="container d-flex justify-content-end">
+  <p> We are folla </p>
+</div>
+          </div>
+        </section>
 <section id="Products">
-  <div class="container-fluid">
-    <h1 class="text-center">Our Products</h1>
+  
+  <div class="container-fluid  ">
+    <h1 class="text-start">Our Products</h1>
     <div
      class="row d-flex flex-md-row flex-sm-column flex-xs-column mx-auto justify-content-center" >
       <div class="col-md-3 ">
@@ -174,7 +184,8 @@
 </div>
   </div>
     </div>
-  </div>
+  </div> 
+  
 </section>
 <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="addtowish">
   <div class="d-flex">
@@ -211,54 +222,13 @@
 <section id="Contactus">
       <h3 class="text-center">Contact us</h3>
       <form id="contact">
-        <!--  method="post" action="mailto:folla.acessories24@gmail.com" enctype="application/x-www-form-urlencoded" -->
-        <div class="row ">
-        <div class="col-md-5">
-      <div class="form-group form-floating">
-        <input type="text" id="Name"class="form-control "  placeholder="Enter Your name" required name="name" >
-        <label for="Name">Name</label>
-  
-      </div>
-  </div>
-  <div class="col-md-5">
-      <div class="form-group form-floating">
-        
-        <input type="email" class="form-control " id="Email" placeholder="Enter Your Email"required name="mail">
-        <label for="Email">Email</label>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-md-5 ">
-      <div class="form-group form-floating ">
-          <input type="text" class="form-control col-sm-2 col-form-label " id="Phone" placeholder="Enter Phone Number" name="phone">
-          <label for="Phone">Phone number</label>
-          <span>Optional</span>
-  
+        <div class="mb-3">
+          <label for="Name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="Name" placeholder="Your name">
         </div>
-        </div>
-        <div class="row">
-        <div class="col-md-7 text-center">
-          <div class="form-group form-floating ">
-            <input type="text" id="subject"class="form-control "  placeholder="Enter Your name" required name="subject">
-            <label for="subject">subject</label>
-        
-          </div> 
-          </div>
-          <div class="row">
-      <div class="col-md-12 text-center">
-      <div class="form-group form-floating mb-3">
-        <textarea class="form-control "  rows="5" placeholder="Your text here..." id="message1" name="message"></textarea>
-        <label for="message" class="form-label">message</label>
-  
-      </div>
-        </div>
-      </div>
-      </div>
-        </div>
-        <div class="text-center">
-      <button type="button" class="btn btn-success btn-center">Send</button>
-      <button type="reset"class="btn btn-danger btn-center">Cancel</button>
-      </div>
+        <div class="mb-3">
+          <label for="Email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="Email" placeholder="">
     </form>
     </section>
         <footer>

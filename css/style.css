@@ -18,6 +18,10 @@ body{
 .ar{
     direction: rtl;
 }
+/* #about-us{
+    background-color:rgb(211, 94, 231)
+   
+} */
 #cart{
     max-width: 24px;
     max-height: 24px;
@@ -146,14 +150,19 @@ color:#ffa5af;
         top:0;
         width:0%;
         height:100%;
-        transition: all .3s;
+        transition: all .5s ease;
         background-color: #ffa5af;
         z-index: -1;
         translate: translateX(-100%);
+                /* transition:  .3s ease; */
+
      }
      main #shop-btn:hover{
         background-color:#ffa5af;
         color:white;
+                /* transition: all .3s ease; */
+        transition: all .5s ease;
+
      }
 
       main #shop-btn:hover::before{
@@ -163,6 +172,11 @@ color:#ffa5af;
       }
       main .ring-image #main-img1{
         animation: slider 60s linear infinite;
+        width: 500px;
+        height: 400px;
+         position: absolute;
+        top: -21%;
+        left:55%;
         /* background-size:cover ;
         width: 450px ;
         height: 450px;
@@ -173,20 +187,23 @@ color:#ffa5af;
         transition:0.3s;
       }
       @keyframes slider {
+        
         0%{
-            content:url( '../images/daisy-ring.webp');
+            content:url( '../images/folla4.png');
         }
         25%{
-         content:url( '../images/Dream-Catcher-Bracelet.webp');
-  
+            content: url('../images/folla1.png');
+        }
+        
+        50%{
+            content: url('../images/folla5.png');
+ 
         }
         75%{
-           content: url('../images/fish-tail-necklace (1).webp');
-
-        }        
-        100%{
-            content: url('../images/floral-earrings.webp');
- 
+            content: url('../images/folla2.png');
+        }
+       100%{
+            content: url('../images/folla2.png');
         }
       }
       /* .review-card .review-img{
@@ -220,6 +237,7 @@ color:#ffa5af;
 #sbtn:hover{
 
         background-color: #ffa5af;
+        /* transition:15s; */
     }
   #sbtn:hover i{
     color:white;
@@ -411,6 +429,18 @@ max-width: 3em;
     background-color: #ffa5af;
     color:white;
 } */
+ /*----------------Shop Page Styles-------------------*/ 
+/* #product-filter{
+    width: 25%;
+    height: 100%;
+} */
+ img{
+    object-fit: none;
+    width: 250px;
+    height: 250px;
+    /* object-fit: scale-down; */
+object-position: 50% 50%; 
+ }
 @keyframes appear {
     from{
         opacity: 0;
@@ -442,7 +472,10 @@ max-width: 3em;
 section ,div ,h1{
     animation: appear 5 linear;
 }
- 
+ .prod-sec-img{
+    max-width: 300px;
+    max-height: 300px;
+ }
 @media (max-width:999px) {
     *{
         font-size: 16px;
